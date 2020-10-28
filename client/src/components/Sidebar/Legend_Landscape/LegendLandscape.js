@@ -13,11 +13,6 @@ export default class LegendLandscape extends React.Component {
     state = {
         legendItemsLand: [
             {
-                name: "Ландшафты",
-                layer: landscape,
-                isOnMap: false
-            },
-            {
                 name: "Фотографии",
                 layer: photo,
                 img_src: LogoPhoto
@@ -25,7 +20,10 @@ export default class LegendLandscape extends React.Component {
                 name: "Тропы и дорожки",
                 layer: roads,
                 img_src: LogoRoad
-            }
+            }, {
+                name: "Ландшафты",
+                layer: landscape,
+            },
         ],
         isOnMap: false
     }
@@ -33,41 +31,31 @@ export default class LegendLandscape extends React.Component {
     addLandLayer(event) {
     }
 
-/*    showMeImg() {
-
-        if (this.state.img_src === true) {
-            return <img alt={this.state.img_src}/>;
-        } else if (this.state.img_src === false) {
-            return null
-        }
-    }*/
-
-
     render() {
-
 
         return (
 
             <div className='legend_layers-land'>
-
                 {
                     this.state.legendItemsLand.map((item, key) => (
                         <div className='legend_layers-land_item' key={key}>
-                            {/*{this.showMeImg.bind(this)}*/}
+
+                            <input id={item.name} name='Ландшафты' type="checkbox"
+                                   defaultChecked={this.state.isOnMap}
+                                   onClick={this.addLandLayer.bind(this)}/>
+
                             {item.img_src && (<img alt={item.name}
-                                className="legendLand_item-img"
-                                src={item.img_src}/>)}
+                                                   className="legendLand_item-img"
+                                                   src={item.img_src}/>)}
+
                             <label htmlFor={item.name}
                                    className="legend_item-title"> - {item.name}
                             </label>
+
                         </div>
                     ))
-                            }
-
-
-                        </div>
-                    )
                 }
-
-
-                }
+            </div>
+        )
+    }
+}

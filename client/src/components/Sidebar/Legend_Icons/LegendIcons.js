@@ -8,7 +8,6 @@ import LogoTechImpact from "../../../icons/icons/metall.png"
 import LogoAnimalPlaces from "../../../icons/icons/crow.png"
 
 
-
 const lighthouse = "",
     tools = "",
     specialObj = "",
@@ -24,7 +23,6 @@ export default class LegendIcons extends React.Component {
                 layer: lighthouse,
                 isOnMap: false,
                 img_src: LogoLightHouse
-
             },
             {
                 name: "Инструменты исследования окружающей среды",
@@ -59,7 +57,6 @@ export default class LegendIcons extends React.Component {
 
     render() {
 
-
         return (
             <div className='legend_layers-icons'>
                 {
@@ -84,10 +81,7 @@ export default class LegendIcons extends React.Component {
                         </div>
                     ))
                 }
-
             </div>
-
         )
-
     }
 }
