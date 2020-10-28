@@ -3,3 +3,8 @@
     margin: 10px;
     padding: 5px;
 }
+
+.legendLand_item-img {
+    max-height:55px;
+    max-width: 25px;
+}

@@ -27,8 +27,6 @@ export default class Legend_layers extends React.Component {
                 name: "Цифровая модель рельефа",
                 layer: digitalModelRelief,
                 isOnMap: false
-
-
             }
         ]
     }
@@ -45,22 +43,17 @@ export default class Legend_layers extends React.Component {
                 item.isOnMap = !item.isOnMap
                 document.getElementById(item.name).checked = item.isOnMap
                 console.log("onLegendItemsChanged4", item)
-
             }
         })
         this.setState({
             legendItems: legendItemsMapLayers
         })
-        console.log("onLegendItemsChanged5", this.state)
-
     }
 
     render() {
 
-
         return (
             <div className='legend_layers-map'>
-
                 {
                     this.state.legendItemsMapLayers.map((item, key) => (
                         <div className='legend_layers-map_item' key={key}>
@@ -75,14 +68,10 @@ export default class Legend_layers extends React.Component {
                             <label htmlFor={item.name}
                                    className="legendMap_item-title"> - {item.name}
                             </label>
-
                         </div>
                     ))
                 }
-
             </div>
-
-
         )
     }
 

@@ -72,10 +72,7 @@ export default class LegendTerritory extends React.Component {
                         </div>
                     ))
                 }
-
             </div>
-
-
         )
     }
 

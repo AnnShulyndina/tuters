@@ -11,7 +11,7 @@ body {
 
 :root {
   position: relative;
-  --landscape-width: 15;
+  --landscape-width: 18;
   --header-height: 4rem;
   --secs: 0.6s;
   --bg-right: #ffffff;
@@ -52,11 +52,12 @@ body {
   flex-grow: 1;
 
   .header {
+    margin: 0;
+    padding: 0;
     background: linear-gradient(to right, var(--bg-left), var(--bg-right));
     @media (orientation: landscape) {
       .title {
-        transition: left var(--secs), right var(--secs);
-
+        transition: right var(--secs);
         &.right-closed {
           right: var(--header-height);
         }
@@ -65,10 +66,8 @@ body {
   }
 }
 
-
 #right {
   overflow: auto;
-
   position: relative;
   z-index: 100;
   transition: width var(--secs);

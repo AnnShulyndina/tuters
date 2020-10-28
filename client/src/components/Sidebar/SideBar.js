@@ -41,16 +41,20 @@ export default class SideBar extends React.Component {
                     <div className={`sidebar ${rightOpen}`}>
                         <div className='sidebar-header'>
                             <h3 className='title'>
-                                Header
+                                Условные обозначения
                             </h3>
                         </div>
                         <div className='sidebar-content'>
-                            <h3 className="sidebar_labelList">Layers</h3><br/>
                             <Legend_layers/>
+                            <hr/>
                             <LegendTerritory/>
+                            <hr/>
                             <LegendSRD/>
+                            <hr/>
                             <LegendIcons/>
+                            <hr/>
                             <LegendLandscape/>
+                            <hr/>
                             <LegendDepth/>
                         </div>
                     </div>

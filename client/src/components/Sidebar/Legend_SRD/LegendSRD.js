@@ -31,33 +31,34 @@ export default class LegendSRD extends React.Component {
 
     }
 
-
     render() {
-
 
         return (
             <div className='legend_layers-srd'>
+
                 <input className='legend_layers-srd_item-input'
                        id={"item.name"}
                        name={"item.name"}
                        type="checkbox"
                        defaultChecked={this.state.isOnMap}
                        onClick={this.addSRDLayer.bind(this)}/>
-                <label htmlFor={"item.name"}
-                       className="legendSRD_item-title"> Съемка рельефа дна
-                </label>
-                {
-                    this.state.legendItemsSRD.map((item, key) => (
-                        <div className='legend_layers-srd_item' key={key}>
-                            <img alt={item.name}
-                                 className="legendTerr_item-img"
-                                 src={item.img_src}/>
-                            <label htmlFor={item.name}
-                                   className="legendTerr_item-title"> - {item.name}
-                            </label>
-                        </div>
-                    ))
-                }
+
+                <span className="legendSRD_item-title"> Съемка рельефа дна</span>
+                <p>
+                    {
+                        this.state.legendItemsSRD.map((item, key) => (
+                            <div className='legend_layers-srd_item' key={key}>
+                                <img alt={item.name}
+                                     className="legendTerr_item-img"
+                                     src={item.img_src}/>
+
+                                <label htmlFor={item.name}
+                                       className="legendTerr_item-title"> - {item.name}
+                                </label>
+                            </div>
+                        ))
+                    }
+                </p>
             </div>
         )
     }
