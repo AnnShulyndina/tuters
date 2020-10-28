@@ -1,6 +1,11 @@
 import React from "react";
 import "./SIdeBar.scss"
 import Legend_layers from "./Legend_Layers/Legend_layers";
+import LegendTerritory from "./Legend_Territory/LegendTerritory";
+import LegendSRD from "./Legend_SRD/LegendSRD";
+import LegendIcons from "./Legend_Icons/LegendIcons";
+import LegendLandscape from "./Legend_Landscape/LegendLandscape";
+import LegendDepth from "./Legend_Depth/LegendDepth";
 
 
 export default class SideBar extends React.Component {
@@ -24,26 +29,13 @@ export default class SideBar extends React.Component {
 
         return (
             <div id='layout'>
-
                 <div id='main'>
-                    <div className='header'>
-
-                        <h3 className={`
-                      title
-                     
-                      ${'right-' + rightOpen}
-                  `}>
-                            Main header
-                        </h3>
-
-                    </div>
+                    <div className='header'></div>
                 </div>
-
-
                 <div id='right' className={rightOpen}>
                     <div className='icon'
                          onClick={this.toggleSidebar}>
-                       {/* //это картинка иконки*/}
+                        {/* //это картинка иконки*/}
                         &equiv;
                     </div>
                     <div className={`sidebar ${rightOpen}`}>
@@ -53,8 +45,13 @@ export default class SideBar extends React.Component {
                             </h3>
                         </div>
                         <div className='sidebar-content'>
-                            <h3 className="sidebar_labelList">Current layer</h3><br/>
-                                <Legend_layers/>
+                            <h3 className="sidebar_labelList">Layers</h3><br/>
+                            <Legend_layers/>
+                            <LegendTerritory/>
+                            <LegendSRD/>
+                            <LegendIcons/>
+                            <LegendLandscape/>
+                            <LegendDepth/>
                         </div>
                     </div>
                 </div>
