@@ -1,9 +1,12 @@
 import React from 'react'
-import {GeoJSON, Map, Pane, TileLayer} from "react-leaflet";
+import {GeoJSON, ImageOverlay, Map, Pane, TileLayer} from "react-leaflet";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import "./MapView.css"
-import srd_points from "../../data/srd_points";
-import village_zone from "../../data/village_zone";
+import srd_points from "../../data/srd_points"
+import isobath from "../../data/srd_izobata_10"
+
+
+import village_zone from "../../data/village_zone"
 import air_add from "../../data/air_add"
 import art_lighthouse from "../../data/art_lighthouse"
 import art_poi from "../../data/art_poi"
@@ -15,7 +18,7 @@ import cleared_area from "../../data/cleared_area"
 import mag_margins from "../../data/mag_margins"
 import oopt_zone from "../../data/oopt_zone"
 import roads from "../../data/roads"
-import isobath from "../../data/srd_izobata_10"
+
 import village_obj from "../../data/village_obj"
 import zone from "../../data/zone"
 
@@ -44,36 +47,55 @@ export default class MapView extends React.Component {
         roads: roads,
         isobath: isobath,
         village_obj: village_obj,
-        zone: zone
-
-
+        zone: zone,
+        groupLayers: []
     }
     leafletMap = null
 
     componentDidMount() {
-        console.log(srd_points)
+        const {groupLayers} = this.props
+        this.setState({groupLayers})
     }
 
     setLeafletMapRef = map => (this.leafletMap = map && map.leafletElement)
 
     render() {
-
         const {
             currentTileLayer, srd_points, village_zone, air_add, art_lighthouse, art_poi, art_pol,
             art_tools, artificial, birds, cleared_area, mag_margins, oopt_zone, roads, isobath, village_obj,
-            zone
+            zone, groupLayers
         } = this.state
+
+        let layers = ""
+
+        if (groupLayers.length > 0) {
+            groupLayers.map((item, key) =>  {
+                if (item.isOnMap) {
+                    layers = item.layers.map((item, key) =>
+                      (  <Pane>
+                          {item.featureType === "GeoJSON" && (<GeoJSON data={item.feature} onEachFeature={(feature, layer) => {
+                              layer.bindTooltip(item.name, feature)
+                          }}/>)}
+
+                          {item.featureType === "raster" && (<ImageOverlay url={item.feature} bounds={item.bounds}/>)}
+                        </Pane>)
+                    )
+                }
+            })
+        }
 
         return (
             <div className="map-view">
-                <Map ref={this.setLeafletMapRef} center={[59.81777280843488, 27.24858748900535]} zoom={5} maxZoom={20}
+                <Map ref={this.setLeafletMapRef} center={[59.85, 27.2]} zoom={13} maxZoom={21} minZoom={8}
                      attributionControl={true} zoomControl={true}
                      doubleClickZoom={true} scrollWheelZoom={true}
                      dragging={true} animate={true} easeLinearity={0.35}>
 
                     <TileLayer url={currentTileLayer}/>
 
-                    <Pane>
+                    {layers}
+
+                {/*    <Pane>
                         <GeoJSON data={srd_points} onEachFeature={(feature, layer) => {
                             layer.bindTooltip('srd points', feature)
                         }}/>
@@ -155,8 +177,7 @@ export default class MapView extends React.Component {
                         <GeoJSON data={zone} onEachFeature={(feature, layers) => {
                             layers.bindTooltip('zone', feature)
                         }}/>
-                    </Pane>
-
+                    </Pane>*/}
 
 
                 </Map>

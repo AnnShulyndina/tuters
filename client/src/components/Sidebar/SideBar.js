@@ -6,16 +6,23 @@ import LegendSRD from "./Legend_SRD/LegendSRD";
 import LegendIcons from "./Legend_Icons/LegendIcons";
 import LegendLandscape from "./Legend_Landscape/LegendLandscape";
 import LegendDepth from "./Legend_Depth/LegendDepth";
+import LegendItem from "./LegendItem";
 
 
 export default class SideBar extends React.Component {
 
     state = {
-        rightOpen: true
+        rightOpen: true,
+        groupLayers: []
     }
 
     constructor(props) {
         super(props);
+    }
+
+    componentDidMount() {
+        const {groupLayers} = this.props
+        this.setState({groupLayers})
     }
 
     toggleSidebar = (event) => {
@@ -23,9 +30,23 @@ export default class SideBar extends React.Component {
         this.setState({[key]: !this.state[key]});
     }
 
+    onLegendItemClick(event, group) {
+        console.log("onLegendItemClick item", event)
+        console.log("onLegendItemClick group", group)
+        console.log("onLegendItemClick key", group.key)
+
+    }
+
     render() {
+        console.log("sidebar props render", this.props)
+
+
+        console.log("sidebar", this.state.groupLayers)
 
         let rightOpen = this.state.rightOpen ? 'open' : 'closed';
+
+        const  groupLayers = this.props.groupLayers
+
 
         return (
             <div id='layout'>
@@ -45,17 +66,29 @@ export default class SideBar extends React.Component {
                             </h3>
                         </div>
                         <div className='sidebar-content'>
-                            <Legend_layers/>
-                            <hr/>
-                            <LegendTerritory/>
-                            <hr/>
-                            <LegendSRD/>
-                            <hr/>
-                            <LegendIcons/>
-                            <hr/>
-                            <LegendLandscape/>
-                            <hr/>
-                            <LegendDepth/>
+
+                            {groupLayers &&
+                            groupLayers.map((item, key, index) => (
+                                <LegendItem groupLayer={item}
+                                            index={index}
+                                            onItemClick={this.onLegendItemClick.bind(this)}/>
+                            ))
+                            }
+
+
+
+
+                            {/*<Legend_layers/>*/}
+                            {/*<hr/>*/}
+                            {/*<LegendTerritory/>*/}
+                            {/*<hr/>*/}
+                            {/*<LegendSRD/>*/}
+                            {/*<hr/>*/}
+                            {/*<LegendIcons/>*/}
+                            {/*<hr/>*/}
+                            {/*<LegendLandscape/>*/}
+                            {/*<hr/>*/}
+                            {/*<LegendDepth/>*/}
                         </div>
                     </div>
                 </div>

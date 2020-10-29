@@ -5,6 +5,8 @@ import "./LegendSRD.css"
 import LogoIsobath from "../../../icons/srd/srd_izobata.png"
 import LogoBottomObject from "../../../icons/srd/srd_points.png"
 import LogoSRD from "../../../icons/srd/srd_grid.png"
+import srd_points from "../../../data/srd_points";
+import srd_izobata_10 from "../../../data/srd_izobata_10";
 
 const SRD = ""
 
@@ -15,21 +17,32 @@ export default class LegendSRD extends React.Component {
             {
                 name: "Изобата (10 м)",
                 img_src: LogoIsobath,
+                feature: srd_izobata_10
 
             }, {
                 name: "Объекты на дне",
-                img_src: LogoBottomObject
-            }, {
-                name: "СРД",
-                img_src: LogoSRD
+                img_src: LogoBottomObject,
+                feature: srd_points
+            // }, {
+            //     label: "СРД",
+            //     icon: LogoSRD,
+            //     feature: null
             }
         ],
-        isOnMap: false
+        isOnMap: true,
     }
 
-    addSRDLayer() {
+    addSRDLayer(event){
+        const dataSRD = this.state.legendItemsSRD
+        dataSRD.forEach(item=> {
+            if (item.srd_points === event.target.name) {
+                item.isOnMap = !item.isOnMap
+            }
 
+        })
     }
+
+
 
     render() {
 
@@ -37,8 +50,8 @@ export default class LegendSRD extends React.Component {
             <div className='legend_layers-srd'>
 
                 <input className='legend_layers-srd_item-input'
-                       id={"item.name"}
-                       name={"item.name"}
+                       id={"item.label"}
+                       name={"item.label"}
                        type="checkbox"
                        defaultChecked={this.state.isOnMap}
                        onClick={this.addSRDLayer.bind(this)}/>
