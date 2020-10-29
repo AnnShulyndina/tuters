@@ -5,6 +5,10 @@ import "./MapView.css"
 import srd_points from "../../data/srd_points";
 import village_zone from "../../data/village_zone";
 import air_add from "../../data/air_add"
+import art_lighthouse from "../../data/art_lighthouse"
+import art_poi from "../../data/art_poi"
+import art_pol from "../../data/art_pollution"
+import art_tools from "../../data/art_pollution"
 
 
 
@@ -20,7 +24,13 @@ export default class MapView extends React.Component {
         currentTileLayer: tileLayersURL.OSM,
         srd_points: srd_points,
         village_zone: village_zone,
-        air_add: air_add
+        air_add: air_add,
+        art_lighthouse: art_lighthouse,
+        art_poi: art_poi,
+        art_pol: art_pol,
+        art_tools: art_tools,
+
+
     }
 
     componentDidMount() {
@@ -33,7 +43,8 @@ export default class MapView extends React.Component {
 
     render() {
 
-        const {currentTileLayer, srd_points, village_zone} = this.state
+        const {currentTileLayer, srd_points, village_zone, air_add, art_lighthouse, art_poi, art_pol,
+        art_tools } = this.state
 
         return (
             <div className="map-view">
@@ -61,6 +72,29 @@ export default class MapView extends React.Component {
                             layer.bindTooltip('air_add', feature)
                         }}/>
                     </Pane>
+                    <Pane>
+                        <GeoJSON data={art_lighthouse} onEachFeature={(feature, layer)=> {
+                            layer.bindTooltip('art_lighthouse', feature)
+                        }}/>
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={art_poi} onEachFeature={(feature, layer)=> {
+                            layer.bindTooltip('air_poi', feature)
+                        }}
+                        />
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={art_pol} onEachFeature={(feature, layer)=> {
+                            layer.bindTooltip('art pollution', feature)
+                        }}/>
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={art_tools} onEachFaeture={(feature, layer)=> {
+                          layer.bindTooltip('art tools', feature)
+                        }}/>
+                    </Pane>
+
+
 
 
 
