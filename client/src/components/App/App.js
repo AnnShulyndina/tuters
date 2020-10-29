@@ -64,11 +64,17 @@ export default class App extends React.Component {
                 ],
             }]
     }
+    onLegendChanged(event, groups) {
+        this.setState({
+            groupLayers: groups
+        })
+    };
     render() {
         return (
             <div className="App">
                 <MapView groupLayers={this.state.groupLayers}/>
-                <SideBar groupLayers={this.state.groupLayers}/>
+                <SideBar groupLayers={this.state.groupLayers}
+                         onLegendChanged={this.onLegendChanged.bind(this)}/>
             </div>
         );
     }

@@ -1,11 +1,5 @@
 import React from "react";
 import "./SIdeBar.scss"
-import Legend_layers from "./Legend_Layers/Legend_layers";
-import LegendTerritory from "./Legend_Territory/LegendTerritory";
-import LegendSRD from "./Legend_SRD/LegendSRD";
-import LegendIcons from "./Legend_Icons/LegendIcons";
-import LegendLandscape from "./Legend_Landscape/LegendLandscape";
-import LegendDepth from "./Legend_Depth/LegendDepth";
 import LegendItem from "./LegendItem";
 
 
@@ -14,38 +8,34 @@ export default class SideBar extends React.Component {
     state = {
         rightOpen: true,
         groupLayers: []
-    }
+    };
 
     constructor(props) {
         super(props);
     }
 
     componentDidMount() {
-        const {groupLayers} = this.props
+        const {groupLayers} = this.props;
         this.setState({groupLayers})
     }
 
     toggleSidebar = (event) => {
         let key = `${event.currentTarget.parentNode.id}Open`;
         this.setState({[key]: !this.state[key]});
-    }
+    };
 
-    onLegendItemClick(event, group) {
-        console.log("onLegendItemClick item", event)
-        console.log("onLegendItemClick group", group)
-        console.log("onLegendItemClick key", group.key)
+    onLegendItemClick(event, group, legendNum) {
+        let groups = this.state.groupLayers
+        groups[legendNum] = group
 
+        this.props.onLegendChanged(event, groups)
     }
 
     render() {
-        console.log("sidebar props render", this.props)
-
-
-        console.log("sidebar", this.state.groupLayers)
 
         let rightOpen = this.state.rightOpen ? 'open' : 'closed';
 
-        const  groupLayers = this.props.groupLayers
+        const groupLayers = this.props.groupLayers;
 
 
         return (
@@ -68,14 +58,12 @@ export default class SideBar extends React.Component {
                         <div className='sidebar-content'>
 
                             {groupLayers &&
-                            groupLayers.map((item, key, index) => (
+                            groupLayers.map((item, key) => (
                                 <LegendItem groupLayer={item}
-                                            index={index}
+                                            legendNum={key}
                                             onItemClick={this.onLegendItemClick.bind(this)}/>
                             ))
                             }
-
-
 
 
                             {/*<Legend_layers/>*/}

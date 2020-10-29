@@ -6,18 +6,7 @@ export default class LegendItem extends React.Component {
 
     state = {
         groupLayer: null,
-        onLegendItemClick:null,
-        index: null
     }
-
-/*    addSRDLayer(event) {
-        const dataSRD = this.state.legendItemsSRD
-        dataSRD.forEach(item=> {
-            if (item.srd_points === event.target.name) {
-                item.isOnMap = !item.isOnMap
-            }
-        })
-    }*/
 
     onItemClick(event) {
         let groupLayer = this.state.groupLayer
@@ -25,12 +14,13 @@ export default class LegendItem extends React.Component {
         this.setState({groupLayer})
 
         const onLegendItemClick = this.props.onItemClick
-        onLegendItemClick(event, groupLayer)
+        onLegendItemClick(event, groupLayer, this.props.legendNum)
     }
 
     componentDidMount() {
-        console.log("componentDidMount",this.props.index)
-        const {groupLayer, onItemClick, index } = this.props
+        const index = this.props.index
+        console.log("componentDidMount",index)
+        const {groupLayer, onItemClick } = this.props
         this.setState({groupLayer: groupLayer,
             onLegendItemClick: onItemClick,
             index: index})
@@ -40,7 +30,6 @@ export default class LegendItem extends React.Component {
 
         const {groupLayer} = this.props
 
-        console.log("LegendItem", groupLayer)
         if (groupLayer !== undefined && groupLayer !== null) {
             return (
                 <div className='legend_layers-srd'
