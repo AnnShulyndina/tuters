@@ -14,6 +14,7 @@ export default class LegendItem extends React.Component {
         this.setState({groupLayer})
 
         const onLegendItemClick = this.props.onItemClick
+        console.log("LegItem key", this.props.legendNum)
         onLegendItemClick(event, groupLayer, this.props.legendNum)
     }
 
@@ -42,7 +43,7 @@ export default class LegendItem extends React.Component {
                            onClick={this.onItemClick.bind(this)} />
 
                     {
-                        groupLayer.label && (
+                        groupLayer.label !== null && (
                             <span className="legendSRD_item-title"> Съемка рельефа дна</span>
                         )
                     }

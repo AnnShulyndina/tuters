@@ -5,8 +5,18 @@ import SideBar from "../Sidebar/SideBar";
 import LogoIsobath from "../../icons/srd/srd_izobata.png";
 import LogoBottomObject from "../../icons/srd/srd_points.png";
 import LogoSRD from "../../icons/srd/srd_grid.png";
+
+import LogoLightHouse from "../../icons/icons/lighthouse.png"
+import LogoTools from "../../icons/icons/level.png"
+import LogoSpecialObg from "../../icons/icons/headstone.png"
+import LogoTechImpact from "../../icons/icons/metall.png"
+import LogoAnimalPlaces from "../../icons/icons/crow.png"
+
 import srd_points from "../../data/srd_points"
 import srd_izobata_10 from "../../data/srd_izobata_10"
+import art_lighthouse from "../../data/art_lighthouse"
+import art_pollution from "../../data/art_pollution"
+import art_poi from "../../data/art_poi"
 import srd_grid from "../../data/map_image/srd_grid.png"
 
 export default class App extends React.Component {
@@ -32,43 +42,54 @@ export default class App extends React.Component {
                     feature: srd_grid,
                     featureType: "raster",
                     bounds: [
-                        [59.829035277018569, 27.2013],[59.929035277018569, 27.3013]
+                        [59.829035277018569, 27.2013], [59.929035277018569, 27.3013]
                     ],
                 }
             ],
+        },{
+            label: null,
+            isOnMap: true,
+            layers: [
+                {
+                    label: "Маяк",
+                    icon: LogoLightHouse,
+                    feature: art_lighthouse,
+                    featureType: "GeoJSON"
+                }
+            ],
+        },{
+            label: null,
+            isOnMap: true,
+            layers: [
+                {
+                    label: "Маяк",
+                    icon: LogoLightHouse,
+                    feature: art_pollution,
+                    featureType: "GeoJSON"
+                }
+            ],
+        },{
+            label: null,
+            isOnMap: true,
+            layers: [
+                {
+                    label: "Маяк",
+                    icon: LogoLightHouse,
+                    feature: art_poi,
+                    featureType: "GeoJSON"
+                }
+            ],
         },
-            {
-                label: "2222222222222222",
-                isOnMap: true,
-                layers: [
-                    {
-                        label: "Изобата (10 м)",
-                        icon: LogoIsobath,
-                        feature: srd_izobata_10,
-                        featureType: "GeoJSON"
-
-                    }, {
-                        label: "Объекты на дне",
-                        icon: LogoBottomObject,
-                        feature: srd_points,
-                        featureType: "GeoJSON"
-                    }, {
-                        label: "СРД",
-                        icon: LogoSRD,
-                        feature: srd_grid,
-                        featureType: "raster",
-                        bounds: [
-                            [59.829035277018569, 27.2013],[59.929035277018569, 27.3013]
-                        ],
-                    }
-                ],
-            }]
+        ]
     }
+
     onLegendChanged(event, groups) {
+        console.log("groups", groups)
         this.setState({
             groupLayers: groups
         })
     };
+
     render() {
         return (
             <div className="App">

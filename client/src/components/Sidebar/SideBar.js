@@ -25,8 +25,13 @@ export default class SideBar extends React.Component {
     };
 
     onLegendItemClick(event, group, legendNum) {
+        console.log("Sidebar group", group)
+        console.log("Sidebar legendNum", legendNum)
         let groups = this.state.groupLayers
+        console.log("Sidebar groups[legendNum]", groups)
         groups[legendNum] = group
+        console.log("Sidebar groups[legendNum]", groups)
+        this.setState({groupLayers: groups})
 
         this.props.onLegendChanged(event, groups)
     }

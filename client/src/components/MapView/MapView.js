@@ -55,6 +55,7 @@ export default class MapView extends React.Component {
     componentDidMount() {
         const {groupLayers} = this.props
         this.setState({groupLayers})
+        console.log("MavView componentDidMount" , groupLayers)
     }
 
     setLeafletMapRef = map => (this.leafletMap = map && map.leafletElement)
@@ -63,14 +64,20 @@ export default class MapView extends React.Component {
         const {
             currentTileLayer, srd_points, village_zone, air_add, art_lighthouse, art_poi, art_pol,
             art_tools, artificial, birds, cleared_area, mag_margins, oopt_zone, roads, isobath, village_obj,
-            zone, groupLayers
+            zone
         } = this.state
+
+        const {groupLayers} = this.props
 
         let layers = ""
 
+        console.log("MavView", groupLayers)
+
         if (groupLayers.length > 0) {
             groupLayers.map((item, key) =>  {
+                console.log("item1", item)
                 if (item.isOnMap) {
+                    console.log("item2", item)
                     layers = item.layers.map((item, key) =>
                       (  <Pane>
                           {item.featureType === "GeoJSON" && (<GeoJSON data={item.feature} onEachFeature={(feature, layer) => {
