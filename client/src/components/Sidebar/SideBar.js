@@ -25,12 +25,8 @@ export default class SideBar extends React.Component {
     };
 
     onLegendItemClick(event, group, legendNum) {
-        console.log("Sidebar group", group)
-        console.log("Sidebar legendNum", legendNum)
         let groups = this.state.groupLayers
-        console.log("Sidebar groups[legendNum]", groups)
         groups[legendNum] = group
-        console.log("Sidebar groups[legendNum]", groups)
         this.setState({groupLayers: groups})
 
         this.props.onLegendChanged(event, groups)
@@ -41,7 +37,6 @@ export default class SideBar extends React.Component {
         let rightOpen = this.state.rightOpen ? 'open' : 'closed';
 
         const groupLayers = this.props.groupLayers;
-
 
         return (
             <div id='layout'>
@@ -65,23 +60,11 @@ export default class SideBar extends React.Component {
                             {groupLayers &&
                             groupLayers.map((item, key) => (
                                 <LegendItem groupLayer={item}
+                                            key={key}
                                             legendNum={key}
                                             onItemClick={this.onLegendItemClick.bind(this)}/>
                             ))
                             }
-
-
-                            {/*<Legend_layers/>*/}
-                            {/*<hr/>*/}
-                            {/*<LegendTerritory/>*/}
-                            {/*<hr/>*/}
-                            {/*<LegendSRD/>*/}
-                            {/*<hr/>*/}
-                            {/*<LegendIcons/>*/}
-                            {/*<hr/>*/}
-                            {/*<LegendLandscape/>*/}
-                            {/*<hr/>*/}
-                            {/*<LegendDepth/>*/}
                         </div>
                     </div>
                 </div>
