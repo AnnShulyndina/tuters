@@ -13,7 +13,11 @@ import artificial from "../../data/artificial"
 import birds from "../../data/birds"
 import cleared_area from "../../data/cleared_area"
 import mag_margins from "../../data/mag_margins"
-
+import oopt_zone from "../../data/oopt_zone"
+import roads from "../../data/roads"
+import isobath from "../../data/srd_izobata_10"
+import village_obj from "../../data/village_obj"
+import zone from "../../data/zone"
 
 
 const tileLayersURL = {
@@ -35,8 +39,12 @@ export default class MapView extends React.Component {
         artificial: artificial,
         birds: birds,
         cleared_area: cleared_area,
-        mag_margins:mag_margins
-
+        mag_margins: mag_margins,
+        oopt_zone: oopt_zone,
+        roads: roads,
+        isobath: isobath,
+        village_obj: village_obj,
+        zone: zone
 
 
     }
@@ -52,7 +60,8 @@ export default class MapView extends React.Component {
 
         const {
             currentTileLayer, srd_points, village_zone, air_add, art_lighthouse, art_poi, art_pol,
-            art_tools, artificial, birds, cleared_area, mag_margins
+            art_tools, artificial, birds, cleared_area, mag_margins, oopt_zone, roads, isobath, village_obj,
+            zone
         } = this.state
 
         return (
@@ -118,11 +127,35 @@ export default class MapView extends React.Component {
                         }}/>
                     </Pane>
                     <Pane>
-                        <GeoJSON data={mag_margins} onEachFeature={(feature, layers)=> {
+                        <GeoJSON data={mag_margins} onEachFeature={(feature, layers) => {
                             layers.bindTooltip('mag margins', feature)
                         }}/>
                     </Pane>
-
+                    <Pane>
+                        <GeoJSON data={oopt_zone} onEachFeature={(feature, layers) => {
+                            layers.bindTooltip('oopt zone', feature)
+                        }}/>
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={roads} onEachFeature={(feature, layers) => {
+                            layers.bindTooltip('roads', feature)
+                        }}/>
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={isobath} onEachFeature={(feature, layers) => {
+                            layers.bindTooltip('isobath', feature)
+                        }}/>
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={village_obj} onEachFeature={(feature, layers) => {
+                            layers.bindTooltip('village obj', feature)
+                        }}/>
+                    </Pane>
+                    <Pane>
+                        <GeoJSON data={zone} onEachFeature={(feature, layers) => {
+                            layers.bindTooltip('zone', feature)
+                        }}/>
+                    </Pane>
 
 
 
