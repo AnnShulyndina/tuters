@@ -1,31 +1,26 @@
 import React from "react";
 import "./SIdeBar.scss"
-import Legend_layers from "./Legend_Layers/Legend_layers";
-import LegendTerritory from "./Legend_Territory/LegendTerritory";
-import LegendSRD from "./Legend_SRD/LegendSRD";
-import LegendIcons from "./Legend_Icons/LegendIcons";
-import LegendLandscape from "./Legend_Landscape/LegendLandscape";
-import LegendDepth from "./Legend_Depth/LegendDepth";
-
+import LegendItem from "./LegendItem";
 
 export default class SideBar extends React.Component {
 
     state = {
-        rightOpen: true
-    }
-
-    constructor(props) {
-        super(props);
-    }
-
+        rightOpen: true,
+    };
     toggleSidebar = (event) => {
         let key = `${event.currentTarget.parentNode.id}Open`;
         this.setState({[key]: !this.state[key]});
+    };
+
+    onLegendItemClick(event, groupLayer, legendNum) {
+        this.props.onLegendChanged(groupLayer, legendNum)
     }
 
     render() {
 
         let rightOpen = this.state.rightOpen ? 'open' : 'closed';
+
+        const groupLayers = this.props.groupLayers;
 
         return (
             <div id='layout'>
@@ -45,23 +40,19 @@ export default class SideBar extends React.Component {
                             </h3>
                         </div>
                         <div className='sidebar-content'>
-                            <Legend_layers/>
-                            <hr/>
-                            <LegendTerritory/>
-                            <hr/>
-                            <LegendSRD/>
-                            <hr/>
-                            <LegendIcons/>
-                            <hr/>
-                            <LegendLandscape/>
-                            <hr/>
-                            <LegendDepth/>
+
+                            {groupLayers &&
+                            groupLayers.map((item, key) => (
+                                    <LegendItem groupLayer={item}
+                                                key={key}
+                                                legendNum={key}
+                                                onItemClick={this.onLegendItemClick.bind(this)}/>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
             </div>
         );
     }
-
-
 }

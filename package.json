@@ -1,5 +1,5 @@
 {
-  "name": "gis_tuters",
+  "label": "gis_tuters",
   "version": "1.0.0",
   "description": "big tuters project",
   "main": "server.js",
