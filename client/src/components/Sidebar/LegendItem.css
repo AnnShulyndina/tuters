@@ -1,9 +1,19 @@
-.legend_layers-srd {
-    margin: 10px;
-    padding: 5px;
-}
 
-.legendSRD_item-title {
+
+/*.legend_item-title {
     font-weight: bold;
+}*/
+
+.terr-oopt-item, .terr-fin-item, .terr-cleaned-item, .terr-air-item  {
+    margin: 0;
+    padding: 0;
 }
 
+.srd-item {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.icons-lighthouse-item, .land-photo-item {
+    margin-top: 20px;
+}

@@ -14,6 +14,7 @@ export default class MapView extends React.Component {
     state = {
         currentTileLayer: tileLayersURL.OSM,
     };
+
     leafletMap = null;
 
     setLeafletMapRef = map => (this.leafletMap = map && map.leafletElement);

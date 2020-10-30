@@ -1,12 +1,6 @@
 import React from "react";
 import "./LegendTerritory.css"
 
-import LogoTerrOOPT from "../../../icons/terr/green.svg"
-import LogoTerrFinVil from "../../../icons/terr/blue.svg"
-import LogoTerrClean from "../../../icons/terr/purple.svg"
-import LogoTerrAeroPhoton from "../../../icons/terr/pink.svg"
-
-
 const terrOOPT = "",
     terrFinVil = "",
     terrClean = "",
@@ -15,7 +9,7 @@ const terrOOPT = "",
 
 export default class LegendTerritory extends React.Component {
     state = {
-        legendItemsTerrLayers: [
+    legendItemsTerrLayers: [
             {
                 name: "Территория ООПТ",
                 layer: terrOOPT,
