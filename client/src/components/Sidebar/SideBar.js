@@ -2,7 +2,6 @@ import React from "react";
 import "./SIdeBar.scss"
 import LegendItem from "./LegendItem";
 
-
 export default class SideBar extends React.Component {
 
     state = {
@@ -28,7 +27,6 @@ export default class SideBar extends React.Component {
         let groups = this.state.groupLayers
         groups[legendNum] = group
         this.setState({groupLayers: groups})
-
         this.props.onLegendChanged(event, groups)
     }
 
@@ -71,6 +69,4 @@ export default class SideBar extends React.Component {
             </div>
         );
     }
-
-
 }

@@ -30,15 +30,16 @@ export default class LegendItem extends React.Component {
 
         if (groupLayer !== undefined && groupLayer !== null) {
             return (
-                <div className='legend_layers-srd' onClick={this.onItemClick.bind(this)}>
+                <div className='legend_layers-srd'
+                     onClick={this.onItemClick.bind(this)}>
                     <input className='legend_layers-srd_item-input'
-                           id={groupLayer.label}
-                           name={groupLayer.label}
+                           id={groupLayer.groupLabel}
+                           name={groupLayer.groupLabel}
                            type="checkbox"
                            checked={groupLayer.isOnMap}
                            />
                     {
-                        groupLayer.label !== null && (<span className="legendSRD_item-title"> {groupLayer.label}</span>)
+                        groupLayer.label !== null && (<span className="legendSRD_item-title"> {groupLayer.groupLabel}</span>)
                     }
                     {
                         groupLayer.layers.length > 0 && (

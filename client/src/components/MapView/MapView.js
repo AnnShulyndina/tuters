@@ -32,9 +32,10 @@ export default class MapView extends React.Component {
         } = this.state;
         let {groupLayers} = this.props;
         groupLayers = groupLayers.filter(item => item.isOnMap);
+        console.log("MapView render groupLayers", groupLayers);
         let layers = this.getLayers(groupLayers);
 
-
+        console.log("MapView render items", layers);
         return (
             <div className="map-view">
                 <Map ref={this.setLeafletMapRef} center={[59.85, 27.2]} zoom={13} maxZoom={21} minZoom={8}
@@ -44,14 +45,7 @@ export default class MapView extends React.Component {
 
                     <TileLayer url={currentTileLayer}/>
 
-                    {layers}
-
-                    {/*<Pane >*/}
-                    {/*    <GeoJSON data={groupLayers[0].layers[0].feature} onEachFeature={(feature, layer) => {*/}
-                    {/*        layer.bindTooltip(groupLayers[0].layers[0].name, feature)*/}
-                    {/*    }}/>*/}
-                    {/*</Pane>*/}
-
+                    {this.getLayers(groupLayers)}
                 </Map>
             </div>
         )
@@ -62,16 +56,15 @@ export default class MapView extends React.Component {
         return groupLayers.map((item, key) => {
             const k = key;
             return item.layers.map((item, key) => {
-                    const kk = key + k * 1000;
                     if (item.featureType === "GeoJSON") {
-                        return (<Pane key={kk}>
-                            <GeoJSON key={kk} data={item.feature} onEachFeature={(feature, layer) => {
-                                layer.bindTooltip(item.name, feature)
+                        return (<Pane >
+                            <GeoJSON key={item.layerKey} data={item.feature} onEachFeature={(feature, layer) => {
+                                layer.bindTooltip(item.label, feature)
                             }}/>
                         </Pane>)
                     } else if (item.featureType === "raster") {
-                        return (<Pane key={kk}>
-                            <ImageOverlay key={kk} url={item.feature} bounds={item.bounds}/>
+                        return (<Pane>
+                            <ImageOverlay key={item.layerKey} url={item.feature} bounds={item.bounds}/>
                         </Pane>)
                     } else {
                         return ""
