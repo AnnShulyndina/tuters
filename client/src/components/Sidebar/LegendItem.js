@@ -25,6 +25,7 @@ export default class LegendItem extends React.Component {
         })
     }
 
+
     render() {
 
         //class assignment for state
@@ -34,8 +35,6 @@ export default class LegendItem extends React.Component {
             if (groupLayer.controlClassName !== null && groupLayer.controlClassName !== undefined) {
                 classes = classes + " " + groupLayer.controlClassName
             }
-
-
 
 
             return (
@@ -55,6 +54,8 @@ export default class LegendItem extends React.Component {
                         groupLayer.label !== null && (
                             <span className="legend_item-title"> {groupLayer.groupLabel}</span>)
                     }
+
+
                     {
                         groupLayer.layers.length > 0 && (
                             groupLayer.layers.map((item, key) => (
@@ -69,9 +70,13 @@ export default class LegendItem extends React.Component {
                                         />
                                     )}
 
-                                    <img alt={item.label}
-                                         className="legend_item-img"
-                                         src={item.icon}/>
+                                    {
+                                        item.icon !== null && (
+                                            <img alt={item.label}
+                                                 className="legend_item-img"
+                                                 src={item.icon}/>
+                                        )
+                                    }
 
                                     <label htmlFor={item.label}
                                            className="legend_item-title"> - {item.label}

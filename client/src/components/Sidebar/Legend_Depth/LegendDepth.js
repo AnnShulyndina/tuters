@@ -1,6 +1,6 @@
 import React from "react";
 import "./LegendDepth.css"
-import LogoDepth from "../../../icons/depth/depths.svg"
+import LogoDepth from "../../../../public/icons/depths.svg"
 
 export default class LegendDepth extends React.Component {
     addDepthLayer() {
