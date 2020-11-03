@@ -43,6 +43,7 @@ export default class SideBar extends React.Component {
 
                             {groupLayers &&
                             groupLayers.map((item, key) => (
+
                                     <LegendItem groupLayer={item}
                                                 key={key}
                                                 legendNum={key}

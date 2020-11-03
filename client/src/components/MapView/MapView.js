@@ -2,6 +2,7 @@ import React from 'react'
 import {GeoJSON, ImageOverlay, Map, Pane, TileLayer} from "react-leaflet";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import "./MapView.css"
+import L from 'leaflet';
 
 
 const tileLayersURL = {
@@ -14,9 +15,11 @@ export default class MapView extends React.Component {
     state = {
         currentTileLayer: tileLayersURL.OSM,
     };
+
     leafletMap = null;
 
     setLeafletMapRef = map => (this.leafletMap = map && map.leafletElement);
+
 
     render() {
         const {currentTileLayer} = this.state;
@@ -39,7 +42,7 @@ export default class MapView extends React.Component {
     }
 
     getLayers(groupLayers) {
-        if (groupLayers && groupLayers.length === 0)  return "";
+        if (groupLayers && groupLayers.length === 0) return "";
 
         return groupLayers.map((item, key) => {
             return item.layers.map((item, key) => {
@@ -48,7 +51,28 @@ export default class MapView extends React.Component {
                             <Pane>
                                 <GeoJSON key={item.layerKey} data={item.feature} onEachFeature={(feature, layer) => {
                                     layer.bindTooltip(item.label, feature)
-                                }}/>
+                                }}
+                                         pointToLayer={(feature, latlng) => {
+                                             let iconPath = item.icon
+
+                                             if (item.icons) {
+                                                 item.icons.forEach((elem) => {
+                                                     if (elem.type === feature.properties.name) {
+                                                         iconPath = elem.icon
+                                                     }
+                                                 })
+                                             }
+
+                                             return L.marker(latlng, {
+                                                 icon: new L.Icon ({
+                                                     iconUrl: iconPath,
+                                                     iconSize: [32, 37],
+                                                     iconAnchor: [16, 27]
+                                                 })
+                                             })
+                                         }}
+                                />
+
                             </Pane>
                         )
                     } else if (item.featureType === "raster") {
