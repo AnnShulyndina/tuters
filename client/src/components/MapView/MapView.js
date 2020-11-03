@@ -52,31 +52,6 @@ export default class MapView extends React.Component {
                                 <GeoJSON key={item.layerKey} data={item.feature} onEachFeature={(feature, layer) => {
                                     layer.bindTooltip(item.label, feature)
                                 }}
-
-                                    //          pointToLayer={(feature, latlng) => {
-                                    //
-                                    //     /* let icon = new L.Icon({
-                                    //          iconUrl: "./icons/depths.svg",
-                                    //          iconSize: [32, 37],
-                                    //          iconAnchor: [16, 27]
-                                    //      });*/
-                                    //
-                                    //     let icon = new L.Icon
-                                    //
-                                    //     if (feature === "art_poi") {
-                                    //         icon = new L.Icon({
-                                    //             icon: LogoLightHouse,
-                                    //             iconSize: [32, 37],
-                                    //             iconAnchor: [16, 27]
-                                    //         });
-                                    //     }
-                                    //
-                                    //     return L.marker(latlng, {
-                                    //         icon: icon
-                                    //     });
-                                    // }}/>
-
-
                                          pointToLayer={(feature, latlng) => {
                                              let iconPath = item.icon
 
@@ -87,7 +62,6 @@ export default class MapView extends React.Component {
                                                      }
                                                  })
                                              }
-
 
                                              return L.marker(latlng, {
                                                  icon: new L.Icon ({
