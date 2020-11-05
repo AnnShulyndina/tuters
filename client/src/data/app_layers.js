@@ -38,7 +38,6 @@ import LogoTerrFinVil from "../icons/terr/blue.svg"
 import LogoTerrClean from "../icons/terr/purple.svg"
 import LogoTerrAeroPhoton from "../icons/terr/pink.svg"
 
-
 import art_poi from "./art_poi";
 import art_lighthouse from "./art_lighthouse";
 import art_pollution from "./art_pollution";
@@ -55,50 +54,50 @@ import air_add from "./air_add";
 import zone from "./zone";
 
 function style_zone(feature) {
-    var zone_fillColor='';
-    switch(String(feature.properties['name'])) {
+    var zone_fillColor = '';
+    switch (String(feature.properties['name'])) {
         case 'Болото': {
-            zone_fillColor  ='rgb(33,183,191)';
+            zone_fillColor = 'rgb(33,183,191)';
             break;
         }
         case 'Валуны': {
-            zone_fillColor  ='rgb(134, 121, 134)';
+            zone_fillColor = 'rgb(134, 121, 134)';
             break;
         }
         case 'Ветровал': {
-            zone_fillColor  ='rgb(36, 131, 103)';
+            zone_fillColor = 'rgb(36, 131, 103)';
             break;
         }
         case 'Зарослевая литораль': {
-            zone_fillColor  ='rgb(36, 219, 103)';
+            zone_fillColor = 'rgb(36, 219, 103)';
             break;
         }
         case 'Лесной массив': {
-            zone_fillColor  ='rgb(178,223,138)';
+            zone_fillColor = 'rgb(178,223,138)';
             break;
         }
         case 'Морена': {
-            zone_fillColor  ='rgb(36, 219, 255)';
+            zone_fillColor = 'rgb(36, 219, 255)';
             break;
         }
         case 'Пески': {
-            zone_fillColor  ='rgb(253,191,111)';
+            zone_fillColor = 'rgb(253,191,111)';
             break;
         }
         case 'Прочее': {
-            zone_fillColor  ='rgb(178, 90, 29)';
+            zone_fillColor = 'rgb(178, 90, 29)';
             break;
         }
         case 'Скалы': {
-            zone_fillColor  ='rgb(103, 59, 64)';
+            zone_fillColor = 'rgb(103, 59, 64)';
             break;
         }
         case 'Скальный сосняк': {
-            zone_fillColor  ='rgb(103, 118, 64)';
+            zone_fillColor = 'rgb(103, 118, 64)';
             break;
         }
         case 'Сосняк лишайниковый': {
-            zone_fillColor  ='rgb(103, 152, 64)';
+            zone_fillColor = 'rgb(103, 152, 64)';
             break;
         }
     }
@@ -111,6 +110,45 @@ function style_zone(feature) {
 }
 
 let groupLayers = [
+
+    // base layers
+    {
+        isBaseLayer: true,
+        groupLabel: "Base Satellite",
+        isOnMap: true,
+        layers: [{
+            layerKey: 99,
+            layerURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+        }]
+
+    },
+    {
+        isBaseLayer: true,
+        groupLabel: "Base OSM",
+        isOnMap: false,
+        layers: [{
+            layerKey: 100,
+            layerURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        }]
+    },
+    {
+        isBaseLayer: true,
+        groupLabel: "opentopomap",
+        isOnMap: false,
+        layers: [{
+            layerKey: 102,
+            layerURL: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+        }]
+    },{
+        isBaseLayer: true,
+        groupLabel: "thunderforest",
+        isOnMap: false,
+        layers: [{
+            layerKey: 101,
+            layerURL: 'https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png',
+        }]
+
+    },
 
     /*territory legend*/
     {
@@ -208,22 +246,20 @@ let groupLayers = [
         isOnMap: true,
         controlClassName: "srd-item",
         layers:
-
             [
-           {
-                layerKey: 105,
-                label: "Изобата (10 м)",
-               iconUrl: LogoIzobata,
-                feature: srd_izobata_10,
-                featureType: "GeoJSON"
-            }, {
+                {
+                    layerKey: 105,
+                    label: "Изобата (10 м)",
+                    iconUrl: LogoIzobata,
+                    feature: srd_izobata_10,
+                    featureType: "GeoJSON"
+                }, {
                 layerKey: 106,
                 label: "Объекты на дне",
                 iconUrl: LogoSrd_points,
                 feature: srd_points,
                 featureType: "GeoJSON",
-                iconSize: [5, 5],
-                iconAnchor: [5, 5]
+                iconSize: [12, 12],
             }, {
                 layerKey: 107,
                 label: "СРД",
@@ -234,7 +270,7 @@ let groupLayers = [
                     [59.829035277018569, 27.2013], [59.929035277018569, 27.3013]
                 ],
             }
-        ],
+            ],
     },
 
 
@@ -567,7 +603,7 @@ let groupLayers = [
                 },
 
                 iconUrl: LogoPhoto,
-                iconSize: [32, 32],                
+                iconSize: [32, 32],
                 feature: '',
                 featureType: "GeoJSON"
             }
@@ -607,11 +643,12 @@ let groupLayers = [
                 iconUrl: null,
                 feature: zone,
                 featureType: "GeoJSON",
-                style: style_zone            }
+                style: style_zone
+            }
         ],
     },
     //MagField
-     {
+    {
         groupLabel: "Исследования магнитного поля",
         isOnMap: false,
         controlClassName: "depths-item",

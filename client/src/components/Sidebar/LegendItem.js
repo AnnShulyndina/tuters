@@ -12,9 +12,7 @@ export default class LegendItem extends React.Component {
         let groupLayer = this.state.groupLayer;
         groupLayer.isOnMap = !groupLayer.isOnMap;
         this.setState({groupLayer});
-
         const onLegendItemClick = this.props.onItemClick;
-
         onLegendItemClick(event, groupLayer, this.props.legendNum)
     }
 
@@ -37,23 +35,27 @@ export default class LegendItem extends React.Component {
                     classes = classes + " " + groupLayer.controlClassName
                 }
 
-                let transp = 0.5
+                let transparent = 0.5
 
                 if (groupLayer.isOnMap) {
-                    transp = 1.0
+                    transparent = 1.0
                 }
 
                 return (
                     <div className={classes}
                          onClick={this.onItemClick.bind(this)}
-                         style={{opacity: transp}}
-                        >
+                         style={{opacity: transparent}}
+                    >
 
                         {
                             groupLayer.label !== null && (
                                 <span className="legend_item-title"> {groupLayer.groupLabel}</span>)
                         }
 
+                        {
+                            groupLayer.isBaseLayer &&
+                            (<span > dsfsfs</span>)
+                        }
 
                         {
                             groupLayer.layers.length > 0 && (

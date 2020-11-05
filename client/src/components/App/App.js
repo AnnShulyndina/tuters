@@ -25,13 +25,25 @@ export default class App extends React.Component {
 
     onLegendChanged(groupLayer, legendNum) {
         let groupLayers = this.state.groupLayers
+
         groupLayers[legendNum] = groupLayer
+
+        if (groupLayer.isBaseLayer) {
+            groupLayers.forEach((element, index) => {
+
+                if (element.isBaseLayer) {
+                    element.isOnMap = (index === legendNum);
+                    // groupLayers[index] = element
+                }
+            })
+        }
         this.setState({
             groupLayers: groupLayers
-        })
-
+        });
         // localStorage.setItem('group', JSON.stringify(groupLayers));
     };
+
+
 
     render() {
 
@@ -39,7 +51,8 @@ export default class App extends React.Component {
             <div className="App">
                 <MapView groupLayers={this.state.groupLayers}/>
                 <SideBar groupLayers={this.state.groupLayers}
-                         onLegendChanged={this.onLegendChanged.bind(this)}/>
+                         onLegendChanged={this.onLegendChanged.bind(this)}
+                        />
             </div>
         );
     }
