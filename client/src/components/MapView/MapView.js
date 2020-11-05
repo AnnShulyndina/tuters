@@ -49,24 +49,30 @@ export default class MapView extends React.Component {
                     if (item.featureType === "GeoJSON") {
                         return (
                             <Pane>
-                                <GeoJSON key={item.layerKey} data={item.feature} onEachFeature={(feature, layer) => {
-                                    layer.bindTooltip(item.label, feature)
-                                }}
+                                <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
+                                         onEachFeature={(feature, layer) => {
+                                             layer.bindTooltip(item.label, feature)
+                                         }}
                                          pointToLayer={(feature, latlng) => {
-                                             let iconPath = item.icon
+                                             let iconUrl = item.iconUrl
 
                                              if (item.icons) {
                                                  item.icons.forEach((elem) => {
                                                      if (elem.type === feature.properties.name) {
-                                                         iconPath = elem.icon
+                                                         iconUrl = elem.iconUrl
                                                      }
                                                  })
                                              }
 
+                                             let iconSize = [32,32]
+                                             if (item.iconSize) {
+                                                 iconSize = item.iconSize
+                                             }
+
                                              return L.marker(latlng, {
-                                                 icon: new L.Icon ({
-                                                     iconUrl: iconPath,
-                                                     iconSize: [32, 37],
+                                                 icon: new L.Icon({
+                                                     iconUrl: item.iconUrl,
+                                                     iconSize: iconSize,
                                                      iconAnchor: [16, 27]
                                                  })
                                              })
