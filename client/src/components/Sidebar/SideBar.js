@@ -47,7 +47,8 @@ export default class SideBar extends React.Component {
                                     <LegendItem groupLayer={item}
                                                 key={key}
                                                 legendNum={key}
-                                                onItemClick={this.onLegendItemClick.bind(this)}/>
+                                                onItemClick={this.onLegendItemClick.bind(this)}
+                                                />
                                 ))
                             }
                         </div>

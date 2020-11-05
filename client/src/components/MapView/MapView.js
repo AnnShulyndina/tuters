@@ -1,39 +1,31 @@
 import React from 'react'
-import {GeoJSON, ImageOverlay, Map, Pane, TileLayer} from "react-leaflet";
+import {GeoJSON, ImageOverlay, Map, Pane, Popup, TileLayer} from "react-leaflet";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import "./MapView.css"
 import L from 'leaflet';
 
-
-const tileLayersURL = {
-    arcGIS: "http://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-    OSM: "http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-};
-
 export default class MapView extends React.Component {
-
-    state = {
-        currentTileLayer: tileLayersURL.OSM,
-    };
 
     leafletMap = null;
 
     setLeafletMapRef = map => (this.leafletMap = map && map.leafletElement);
 
-
     render() {
-        const {currentTileLayer} = this.state;
         let {groupLayers} = this.props;
+        if (!groupLayers || groupLayers.length ===0) { return ""}
+
         groupLayers = groupLayers.filter(item => item.isOnMap);
+
+        const baseLayer = groupLayers.filter(item => item.isBaseLayer)[0].layers[0].layerURL
 
         return (
             <div className="map-view">
-                <Map ref={this.setLeafletMapRef} center={[59.85, 27.2]} zoom={13} maxZoom={21} minZoom={8}
+                <Map ref={this.setLeafletMapRef} center={[59.85, 27.2]} zoom={15} maxZoom={21} minZoom={8}
                      attributionControl={true} zoomControl={true}
                      doubleClickZoom={true} scrollWheelZoom={true}
                      dragging={true} animate={true} easeLinearity={0.35}>
 
-                    <TileLayer url={currentTileLayer}/>
+                    <TileLayer url={baseLayer}/>
 
                     {this.getLayers(groupLayers)}
                 </Map>
@@ -49,29 +41,38 @@ export default class MapView extends React.Component {
                     if (item.featureType === "GeoJSON") {
                         return (
                             <Pane>
-                                <GeoJSON key={item.layerKey} data={item.feature} onEachFeature={(feature, layer) => {
-                                    layer.bindTooltip(item.label, feature)
-                                }}
+                                <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
+                                         onEachFeature={(feature, layer) => {
+                                             layer.bindTooltip(item.label, feature)
+                                         }}
                                          pointToLayer={(feature, latlng) => {
-                                             let iconPath = item.icon
+                                             let iconUrl = item.iconUrl
 
                                              if (item.icons) {
                                                  item.icons.forEach((elem) => {
                                                      if (elem.type === feature.properties.name) {
-                                                         iconPath = elem.icon
+                                                         iconUrl = elem.iconUrl
                                                      }
                                                  })
                                              }
 
+                                             let iconSize = [32, 32]
+                                             if (item.iconSize) {
+                                                 iconSize = item.iconSize
+                                             }
+
                                              return L.marker(latlng, {
-                                                 icon: new L.Icon ({
-                                                     iconUrl: iconPath,
-                                                     iconSize: [32, 37],
+                                                 icon: new L.Icon({
+                                                     iconUrl: item.iconUrl,
+                                                     iconSize: iconSize,
                                                      iconAnchor: [16, 27]
                                                  })
                                              })
-                                         }}
-                                />
+                                         }}>
+                                    <Popup>
+                                        A pretty CSS3 popup. <br/> Easily customizable.
+                                    </Popup>
+                                </GeoJSON>
 
                             </Pane>
                         )
@@ -88,4 +89,6 @@ export default class MapView extends React.Component {
             )
         })
     }
+
+
 }
