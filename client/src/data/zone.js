@@ -7,7 +7,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "201",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -29,7 +29,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "202",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -45,7 +45,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "203",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -61,7 +61,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "204",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -77,7 +77,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "205",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -93,7 +93,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "206",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -109,7 +109,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "207",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -125,7 +125,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "208",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -141,7 +141,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "209",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -157,7 +157,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "210",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -173,7 +173,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "211",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -189,7 +189,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "212",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -205,7 +205,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "213",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -221,7 +221,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "214",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -237,7 +237,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "215",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -253,7 +253,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "216",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -269,7 +269,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "217",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -285,7 +285,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "218",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -301,7 +301,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "219",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -317,7 +317,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "220",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -333,7 +333,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "221",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -349,7 +349,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "222",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -365,7 +365,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "223",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -381,7 +381,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "224",
-                "name": "Ветровал",
+                "type": "Ветровал",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -397,7 +397,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "226",
-                "name": "Ветровал",
+                "type": "Ветровал",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -413,7 +413,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "227",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -429,7 +429,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "228",
-                "name": "Ветровал",
+                "type": "Ветровал",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -445,7 +445,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "229",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -461,7 +461,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "230",
-                "name": "Антропогенный ландшафт",
+                "type": "Антропогенный ландшафт",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -477,7 +477,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "232",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -493,7 +493,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "233",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -509,7 +509,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "234",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -525,7 +525,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "235",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -541,7 +541,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "237",
-                "name": "Пески",
+                "type": "Пески",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -557,7 +557,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "238",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -572,7 +572,7 @@ module.exports = {
         {"type": "Feature",
             "properties": {
                 "OBJECTID": "239",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -588,7 +588,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "240",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -604,7 +604,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "241",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -620,7 +620,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "242",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -636,7 +636,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "243",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -652,7 +652,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "244",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -668,7 +668,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "245",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -684,7 +684,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "246",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -700,7 +700,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "248",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -716,7 +716,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "249",
-                "name": "Ветровал",
+                "type": "Ветровал",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -732,7 +732,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "250",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -748,7 +748,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "251",
-                "name": "Антропогенный ландшафт",
+                "type": "Антропогенный ландшафт",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -764,7 +764,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "252",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -780,7 +780,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "253",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -796,7 +796,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "254",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -812,7 +812,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "255",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -828,7 +828,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "256",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -844,7 +844,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "257",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -860,7 +860,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "258",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -876,7 +876,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "259",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -892,7 +892,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "260",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -908,7 +908,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "261",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -924,7 +924,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "262",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -940,7 +940,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "263",
-                "name": "Пески",
+                "type": "Пески",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -956,7 +956,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "264",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -972,7 +972,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "265",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -988,7 +988,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "266",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1004,7 +1004,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "267",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1020,7 +1020,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "268",
-                "name": "Морена",
+                "type": "Морена",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1036,7 +1036,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "270",
-                "name": "Морена",
+                "type": "Морена",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1052,7 +1052,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "271",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1068,7 +1068,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "272",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1084,7 +1084,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "274",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1100,7 +1100,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "275",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1116,7 +1116,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "276",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1132,7 +1132,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "277",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1148,7 +1148,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "278",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1164,7 +1164,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "279",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1180,7 +1180,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "280",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1195,7 +1195,7 @@ module.exports = {
         {"type": "Feature",
             "properties": {
                 "OBJECTID": "281",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1211,7 +1211,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "283",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1227,7 +1227,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "284",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1243,7 +1243,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "290",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1259,7 +1259,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "294",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1275,7 +1275,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "295",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1291,7 +1291,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "299",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1307,7 +1307,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "301",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1323,7 +1323,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "302",
-                "name": "Скальный сосняк",
+                "type": "Скальный сосняк",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1339,7 +1339,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "303",
-                "name": "Пески",
+                "type": "Пески",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1355,7 +1355,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "306",
-                "name": "Ветровал",
+                "type": "Ветровал",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1371,7 +1371,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "308",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1387,7 +1387,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "309",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1402,7 +1402,7 @@ module.exports = {
         {"type": "Feature",
             "properties": {
                 "OBJECTID": "310",
-                "name": "Сосняк лишайниковый",
+                "type": "Сосняк лишайниковый",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1417,7 +1417,7 @@ module.exports = {
         {"type": "Feature",
             "properties": {
                 "OBJECTID": "312",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1433,7 +1433,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "314",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1449,7 +1449,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "315",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1465,7 +1465,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "318",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1481,7 +1481,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "319",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1497,7 +1497,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "320",
-                "name": "Пески",
+                "type": "Пески",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1512,7 +1512,7 @@ module.exports = {
         {"type": "Feature",
             "properties": {
                 "OBJECTID": "321",
-                "name": "Лесной массив",
+                "type": "Лесной массив",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1528,7 +1528,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "322",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": "Болото",
                 "SC": null,
@@ -1544,7 +1544,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "323",
-                "name": "Болото",
+                "type": "Болото",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1560,7 +1560,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "325",
-                "name": "Зарослевая литораль",
+                "type": "Зарослевая литораль",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1576,7 +1576,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "326",
-                "name": "Зарослевая литораль",
+                "type": "Зарослевая литораль",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1592,7 +1592,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "327",
-                "name": "Зарослевая литораль",
+                "type": "Зарослевая литораль",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1608,7 +1608,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "328",
-                "name": "Зарослевая литораль",
+                "type": "Зарослевая литораль",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1624,7 +1624,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "329",
-                "name": "Зарослевая литораль",
+                "type": "Зарослевая литораль",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1640,7 +1640,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "331",
-                "name": "Валуны",
+                "type": "Валуны",
                 "origin": null,
                 "noName": null,
                 "SC": null,
@@ -1656,7 +1656,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "368",
-                "name": "Антропогенный ландшафт",
+                "type": "Антропогенный ландшафт",
                 "origin": "Natural",
                 "noName": "Волнорезы",
                 "SC": null,
@@ -1672,7 +1672,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "370",
-                "name": "Скалы",
+                "type": "Скалы",
                 "origin": null,
                 "noName": null,
                 "SC": null,
@@ -1688,7 +1688,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "371",
-                "name": "Антропогенный ландшафт",
+                "type": "Антропогенный ландшафт",
                 "origin": null,
                 "noName": "Волнорезы",
                 "SC": null,
@@ -1704,7 +1704,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "372",
-                "name": "Пески",
+                "type": "Пески",
                 "origin": null,
                 "noName": null,
                 "SC": null,
@@ -1720,7 +1720,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "382",
-                "name": "Прочее",
+                "type": "Прочее",
                 "origin": "Natural",
                 "noName": null,
                 "SC": null,
@@ -1736,7 +1736,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "383",
-                "name": "Валуны",
+                "type": "Валуны",
                 "origin": null,
                 "noName": null,
                 "SC": null,
@@ -1752,7 +1752,7 @@ module.exports = {
             "type": "Feature",
             "properties": {
                 "OBJECTID": "384",
-                "name": "Валуны",
+                "type": "Валуны",
                 "origin": null,
                 "noName": null,
                 "SC": null,

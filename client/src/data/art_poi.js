@@ -49,7 +49,7 @@ module.exports = {
                     "properties": {
                         "objectid": "65",
                         "image_src": "IMG_7355.JPG",
-                        "name": "Бункер",
+                        "type": "Бункер",
                         "lat": "59,835080556",
                         "long": "27,1973027780001",
                         "datetime": "2019:05:15 08:44:02",
@@ -66,7 +66,7 @@ module.exports = {
                     "properties": {
                         "objectid": "66",
                         "image_src": "IMG_7356.JPG",
-                        "name": "Бункер",
+                        "type": "Бункер",
                         "lat": "59,835080556",
                         "long": "27,1973055560001",
                         "datetime": "2019:05:15 08:44:04",
@@ -83,7 +83,7 @@ module.exports = {
                     "properties": {
                         "objectid": "245",
                         "image_src": "IMG_7584.JPG",
-                        "name": "Указатель",
+                        "type": "Указатель",
                         "lat": "59,8587277780001",
                         "long": "27,190552778",
                         "datetime": "2019:05:15 11:05:38",
@@ -100,7 +100,7 @@ module.exports = {
                     "properties": {
                         "objectid": "248",
                         "image_src": "IMG_7587.JPG",
-                        "name": "Указатель",
+                        "type": "Указатель",
                         "lat": "59,8587000000001",
                         "long": "27,1906138890001",
                         "datetime": "2019:05:15 11:05:55",
@@ -117,7 +117,7 @@ module.exports = {
                     "properties": {
                         "objectid": "270",
                         "image_src": "IMG_7622.JPG",
-                        "name": "Указатель",
+                        "type": "Указатель",
                         "lat": "59,8450083330001",
                         "long": "27,1897361110001",
                         "datetime": "2019:05:15 11:30:09",
@@ -134,7 +134,7 @@ module.exports = {
                     "properties": {
                         "objectid": "300",
                         "image_src": "IMG_85000.jpg",
-                        "name": "Пристань",
+                        "type": "Пристань",
                         "lat": "59,835548929",
                         "long": "27,191735045",
                         "datetime": null,
@@ -151,7 +151,7 @@ module.exports = {
                     "properties": {
                         "objectid": "301",
                         "image_src": "Vert1.jpg",
-                        "name": "Вертолётная площадка",
+                        "type": "Вертолётная площадка",
                         "lat": "59,8347540290001",
                         "long": "27,1959802580001",
                         "datetime": null,
@@ -168,7 +168,7 @@ module.exports = {
                     "properties": {
                         "objectid": "302",
                         "image_src": null,
-                        "name": "Вертолётная площадка",
+                        "type": "Вертолётная площадка",
                         "lat": "59,856640048",
                         "long": "27,1865612830001",
                         "datetime": null,
@@ -185,7 +185,7 @@ module.exports = {
                     "properties": {
                         "objectid": "303",
                         "image_src": null,
-                        "name": "Вертолётная площадка",
+                        "type": "Вертолётная площадка",
                         "lat": "59,8501063130001",
                         "long": "27,222260012",
                         "datetime": null,
@@ -208,7 +208,7 @@ module.exports = {
             "properties": {
                 "FID": 0,
                 "Id": 0,
-                "name": "Немецкое кладбище",
+                "type": "Немецкое кладбище",
                 "note": " ",
                 "image_src": null
             }
@@ -226,24 +226,24 @@ module.exports = {
             "properties": {
                 "FID": 1,
                 "Id": 0,
-                "name": "Финское кладбище",
+                "type": "Финское кладбище",
                 "note": " ",
                 "image_src": null
             }
         },
         {
             "type": "Feature",
-            "properties": {"OID": "1", "name": "Артиллерийское орудие (разрушенное)", "image_src": null, "note": null},
+            "properties": {"OID": "1", "type": "Артиллерийское орудие (разрушенное)", "image_src": null, "note": null},
             "geometry": {"type": "Point", "coordinates": [27.219553438876392, 59.84662739585027]}
         },
         {
             "type": "Feature",
-            "properties": {"OID": "2", "name": "Артиллерийское орудие", "image_src": null, "note": null},
+            "properties": {"OID": "2", "type": "Артиллерийское орудие", "image_src": null, "note": null},
             "geometry": {"type": "Point", "coordinates": [27.181254106856006, 59.852172621177935]}
         },
         {
             "type": "Feature",
-            "properties": {"OID": "3", "name": "Крест", "image_src": "крест (1).jpg", "note": null},
+            "properties": {"OID": "3", "type": "Крест", "image_src": "крест (1).jpg", "note": null},
             "geometry": {"type": "Point", "coordinates": [27.195126277892573, 59.86632018570257]}
         }
     ]

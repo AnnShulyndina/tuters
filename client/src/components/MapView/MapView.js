@@ -50,7 +50,7 @@ export default class MapView extends React.Component {
 
                                              if (item.icons) {
                                                  item.icons.forEach((elem) => {
-                                                     if (elem.type === feature.properties.name) {
+                                                     if (elem.type === feature.properties.type) {
                                                          iconUrl = elem.iconUrl
                                                      }
                                                  })
@@ -63,7 +63,7 @@ export default class MapView extends React.Component {
 
                                              return L.marker(latlng, {
                                                  icon: new L.Icon({
-                                                     iconUrl: item.iconUrl,
+                                                     iconUrl: iconUrl,
                                                      iconSize: iconSize,
                                                      iconAnchor: [16, 27]
                                                  })

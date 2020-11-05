@@ -1,6 +1,6 @@
 module.exports = {
 	"type" : "FeatureCollection",
-	"name" : "pollution",
+	"name":  "pollution",
 	"features" : [
 		{
 			"type" : "Feature",
@@ -11,7 +11,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "1",
 				"image_src" : "IMG_7269.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8555138890001",
 				"long" : "27,1845138890001",
 				"datetime" : "2019:05:15 05:47:51",
@@ -28,7 +28,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "2",
 				"image_src" : "IMG_7270.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,855880556",
 				"long" : "27,185616667",
 				"datetime" : "2019:05:15 05:49:13",
@@ -45,7 +45,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "3",
 				"image_src" : "IMG_7271.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8559083330001",
 				"long" : "27,185641667",
 				"datetime" : "2019:05:15 05:49:40",
@@ -62,7 +62,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "4",
 				"image_src" : "IMG_7272.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8559000000001",
 				"long" : "27,185644444",
 				"datetime" : "2019:05:15 05:49:40",
@@ -79,7 +79,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "5",
 				"image_src" : "IMG_7273.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8564500000001",
 				"long" : "27,1863805560001",
 				"datetime" : "2019:05:15 05:50:55",
@@ -96,7 +96,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "6",
 				"image_src" : "IMG_7274.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,856525",
 				"long" : "27,1858083330001",
 				"datetime" : "2019:05:15 05:51:30",
@@ -113,7 +113,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "7",
 				"image_src" : "IMG_7275.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856486111",
 				"long" : "27,18575",
 				"datetime" : "2019:05:15 05:51:37",
@@ -130,7 +130,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "8",
 				"image_src" : "IMG_7276.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856475",
 				"long" : "27,1857805560001",
 				"datetime" : "2019:05:15 05:51:40",
@@ -147,7 +147,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "9",
 				"image_src" : "IMG_7277.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8564500000001",
 				"long" : "27,1856777780001",
 				"datetime" : "2019:05:15 05:51:48",
@@ -164,7 +164,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "10",
 				"image_src" : "IMG_7278.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856475",
 				"long" : "27,1855194440001",
 				"datetime" : "2019:05:15 05:52:02",
@@ -181,7 +181,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "11",
 				"image_src" : "IMG_7279.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856475",
 				"long" : "27,1855277780001",
 				"datetime" : "2019:05:15 05:52:04",
@@ -198,7 +198,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "12",
 				"image_src" : "IMG_7280.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856711111",
 				"long" : "27,185975",
 				"datetime" : "2019:05:15 05:52:33",
@@ -215,7 +215,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "13",
 				"image_src" : "IMG_7281.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856419444",
 				"long" : "27,1872777780001",
 				"datetime" : "2019:05:15 05:53:34",
@@ -232,7 +232,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "14",
 				"image_src" : "IMG_7282.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8564250000001",
 				"long" : "27,187297222",
 				"datetime" : "2019:05:15 05:53:53",
@@ -249,7 +249,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "16",
 				"image_src" : "IMG_7284.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8564305560001",
 				"long" : "27,1873305560001",
 				"datetime" : "2019:05:15 05:54:03",
@@ -266,7 +266,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "17",
 				"image_src" : "IMG_7285.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8564305560001",
 				"long" : "27,187333333",
 				"datetime" : "2019:05:15 05:54:05",
@@ -283,7 +283,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "18",
 				"image_src" : "IMG_7286.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8564250000001",
 				"long" : "27,1873027780001",
 				"datetime" : "2019:05:15 05:54:10",
@@ -300,7 +300,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "19",
 				"image_src" : "IMG_7287.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8563888890001",
 				"long" : "27,1873694440001",
 				"datetime" : "2019:05:15 05:54:31",
@@ -317,7 +317,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "20",
 				"image_src" : "IMG_7288.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8563583330001",
 				"long" : "27,1873833330001",
 				"datetime" : "2019:05:15 05:55:27",
@@ -334,7 +334,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "21",
 				"image_src" : "IMG_7289.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8563583330001",
 				"long" : "27,1873805560001",
 				"datetime" : "2019:05:15 05:55:32",
@@ -351,7 +351,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "22",
 				"image_src" : "IMG_7290.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856472222",
 				"long" : "27,187533333",
 				"datetime" : "2019:05:15 05:56:40",
@@ -368,7 +368,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "23",
 				"image_src" : "IMG_7291.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856475",
 				"long" : "27,187561111",
 				"datetime" : "2019:05:15 05:56:45",
@@ -385,7 +385,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "24",
 				"image_src" : "IMG_7292.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565055560001",
 				"long" : "27,187563889",
 				"datetime" : "2019:05:15 05:56:57",
@@ -402,7 +402,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "25",
 				"image_src" : "IMG_7293.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8565222220001",
 				"long" : "27,187563889",
 				"datetime" : "2019:05:15 05:57:03",
@@ -419,7 +419,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "26",
 				"image_src" : "IMG_7294.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8565222220001",
 				"long" : "27,187575",
 				"datetime" : "2019:05:15 05:57:17",
@@ -436,7 +436,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "27",
 				"image_src" : "IMG_7295.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565333330001",
 				"long" : "27,1876055560001",
 				"datetime" : "2019:05:15 05:57:26",
@@ -453,7 +453,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "28",
 				"image_src" : "IMG_7296.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856541667",
 				"long" : "27,187602778",
 				"datetime" : "2019:05:15 05:57:28",
@@ -470,7 +470,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "29",
 				"image_src" : "IMG_7297.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8565361110001",
 				"long" : "27,187602778",
 				"datetime" : "2019:05:15 05:57:31",
@@ -487,7 +487,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "30",
 				"image_src" : "IMG_7298.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,856577778",
 				"long" : "27,1876055560001",
 				"datetime" : "2019:05:15 05:57:44",
@@ -504,7 +504,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "31",
 				"image_src" : "IMG_7299.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565861110001",
 				"long" : "27,1876194440001",
 				"datetime" : "2019:05:15 05:57:51",
@@ -521,7 +521,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "32",
 				"image_src" : "IMG_7300.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565722220001",
 				"long" : "27,1876583330001",
 				"datetime" : "2019:05:15 05:58:16",
@@ -538,7 +538,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "33",
 				"image_src" : "IMG_7301.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856552778",
 				"long" : "27,1875944440001",
 				"datetime" : "2019:05:15 05:58:27",
@@ -555,7 +555,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "34",
 				"image_src" : "IMG_7302.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856577778",
 				"long" : "27,1875166670001",
 				"datetime" : "2019:05:15 05:58:39",
@@ -572,7 +572,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "35",
 				"image_src" : "IMG_7303.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,856633333",
 				"long" : "27,187297222",
 				"datetime" : "2019:05:15 05:58:56",
@@ -586,7 +586,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "36",
 				"image_src" : "IMG_7304.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "",
 				"long" : "",
 				"datetime" : "2019:05:15 06:00:28",
@@ -603,7 +603,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "37",
 				"image_src" : "IMG_7305.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8556583330001",
 				"long" : "27,187825",
 				"datetime" : "2019:05:15 06:04:22",
@@ -620,7 +620,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "38",
 				"image_src" : "IMG_7306.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8552472220001",
 				"long" : "27,187666667",
 				"datetime" : "2019:05:15 06:05:45",
@@ -637,7 +637,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "39",
 				"image_src" : "IMG_7308.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,855361111",
 				"long" : "27,187641667",
 				"datetime" : "2019:05:15 06:06:18",
@@ -654,7 +654,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "40",
 				"image_src" : "IMG_7310.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8551861110001",
 				"long" : "27,187680556",
 				"datetime" : "2019:05:15 06:08:05",
@@ -668,7 +668,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "41",
 				"image_src" : "IMG_7319.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "",
 				"long" : "",
 				"datetime" : "2019:05:15 06:13:59",
@@ -682,7 +682,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "45",
 				"image_src" : "IMG_7330.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "",
 				"long" : "",
 				"datetime" : "2019:05:15 06:32:56",
@@ -699,7 +699,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "46",
 				"image_src" : "IMG_7331.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8542166670001",
 				"long" : "27,186394444",
 				"datetime" : "2019:05:15 06:33:13",
@@ -716,7 +716,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "47",
 				"image_src" : "IMG_7332.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,854277778",
 				"long" : "27,1867",
 				"datetime" : "2019:05:15 06:33:54",
@@ -733,7 +733,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "48",
 				"image_src" : "IMG_7333.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,854277778",
 				"long" : "27,1867",
 				"datetime" : "2019:05:15 06:33:55",
@@ -750,7 +750,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "50",
 				"image_src" : "IMG_7335.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,854263889",
 				"long" : "27,186716667",
 				"datetime" : "2019:05:15 06:34:46",
@@ -767,7 +767,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "51",
 				"image_src" : "IMG_7336.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8542944440001",
 				"long" : "27,1866388890001",
 				"datetime" : "2019:05:15 06:34:47",
@@ -784,7 +784,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "52",
 				"image_src" : "IMG_7337.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,854186111",
 				"long" : "27,186580556",
 				"datetime" : "2019:05:15 06:34:49",
@@ -801,7 +801,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "53",
 				"image_src" : "IMG_7342.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8357055560001",
 				"long" : "27,1930055560001",
 				"datetime" : "2019:05:15 08:37:00",
@@ -818,7 +818,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "54",
 				"image_src" : "IMG_7343.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8354138890001",
 				"long" : "27,194044444",
 				"datetime" : "2019:05:15 08:38:36",
@@ -835,7 +835,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "55",
 				"image_src" : "IMG_7344.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,835319444",
 				"long" : "27,1946611110001",
 				"datetime" : "2019:05:15 08:39:32",
@@ -852,7 +852,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "56",
 				"image_src" : "IMG_7345.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8352472220001",
 				"long" : "27,194880556",
 				"datetime" : "2019:05:15 08:39:50",
@@ -869,7 +869,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "57",
 				"image_src" : "IMG_7346.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8351777780001",
 				"long" : "27,195022222",
 				"datetime" : "2019:05:15 08:40:02",
@@ -886,7 +886,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "58",
 				"image_src" : "IMG_7347.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8351777780001",
 				"long" : "27,1950416670001",
 				"datetime" : "2019:05:15 08:40:04",
@@ -903,7 +903,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "59",
 				"image_src" : "IMG_7348.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8351138890001",
 				"long" : "27,1950444440001",
 				"datetime" : "2019:05:15 08:40:15",
@@ -920,7 +920,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "60",
 				"image_src" : "IMG_7349.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8351222220001",
 				"long" : "27,1950944440001",
 				"datetime" : "2019:05:15 08:40:26",
@@ -937,7 +937,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "61",
 				"image_src" : "IMG_7350.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8351222220001",
 				"long" : "27,1951861110001",
 				"datetime" : "2019:05:15 08:40:34",
@@ -954,7 +954,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "62",
 				"image_src" : "IMG_7351.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8351027780001",
 				"long" : "27,1952055560001",
 				"datetime" : "2019:05:15 08:40:38",
@@ -971,7 +971,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "63",
 				"image_src" : "IMG_7353.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8349027780001",
 				"long" : "27,196622222",
 				"datetime" : "2019:05:15 08:42:23",
@@ -988,7 +988,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "64",
 				"image_src" : "IMG_7354.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8348972220001",
 				"long" : "27,1970027780001",
 				"datetime" : "2019:05:15 08:43:20",
@@ -1005,7 +1005,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "67",
 				"image_src" : "IMG_7357.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8350833330001",
 				"long" : "27,197313889",
 				"datetime" : "2019:05:15 08:44:08",
@@ -1022,7 +1022,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "68",
 				"image_src" : "IMG_7358.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8350194440001",
 				"long" : "27,1977833330001",
 				"datetime" : "2019:05:15 08:44:42",
@@ -1039,7 +1039,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "69",
 				"image_src" : "IMG_7360.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,834830556",
 				"long" : "27,1979388890001",
 				"datetime" : "2019:05:15 08:45:03",
@@ -1056,7 +1056,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "70",
 				"image_src" : "IMG_7361.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8347055560001",
 				"long" : "27,1980222220001",
 				"datetime" : "2019:05:15 08:45:23",
@@ -1073,7 +1073,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "71",
 				"image_src" : "IMG_7362.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8347027780001",
 				"long" : "27,198027778",
 				"datetime" : "2019:05:15 08:45:27",
@@ -1090,7 +1090,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "72",
 				"image_src" : "IMG_7363.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8346861110001",
 				"long" : "27,198041667",
 				"datetime" : "2019:05:15 08:45:32",
@@ -1107,7 +1107,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "73",
 				"image_src" : "IMG_7364.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8346861110001",
 				"long" : "27,198041667",
 				"datetime" : "2019:05:15 08:45:34",
@@ -1124,7 +1124,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "74",
 				"image_src" : "IMG_7366.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,835411111",
 				"long" : "27,1981416670001",
 				"datetime" : "2019:05:15 08:47:22",
@@ -1141,7 +1141,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "75",
 				"image_src" : "IMG_7367.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8354027780001",
 				"long" : "27,198161111",
 				"datetime" : "2019:05:15 08:47:28",
@@ -1158,7 +1158,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "76",
 				"image_src" : "IMG_7368.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8354194440001",
 				"long" : "27,198319444",
 				"datetime" : "2019:05:15 08:47:40",
@@ -1175,7 +1175,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "77",
 				"image_src" : "IMG_7369.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8354416670001",
 				"long" : "27,1982944440001",
 				"datetime" : "2019:05:15 08:47:48",
@@ -1192,7 +1192,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "78",
 				"image_src" : "IMG_7370.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,835452778",
 				"long" : "27,1983222220001",
 				"datetime" : "2019:05:15 08:47:55",
@@ -1209,7 +1209,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "79",
 				"image_src" : "IMG_7371.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,835530556",
 				"long" : "27,1984833330001",
 				"datetime" : "2019:05:15 08:48:06",
@@ -1226,7 +1226,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "80",
 				"image_src" : "IMG_7372.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,835636111",
 				"long" : "27,1985638890001",
 				"datetime" : "2019:05:15 08:48:19",
@@ -1243,7 +1243,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "81",
 				"image_src" : "IMG_7373.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,835991667",
 				"long" : "27,199522222",
 				"datetime" : "2019:05:15 08:49:54",
@@ -1260,7 +1260,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "82",
 				"image_src" : "IMG_7375.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8361333330001",
 				"long" : "27,199694444",
 				"datetime" : "2019:05:15 08:50:51",
@@ -1277,7 +1277,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "83",
 				"image_src" : "IMG_7376.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,836125",
 				"long" : "27,199708333",
 				"datetime" : "2019:05:15 08:50:53",
@@ -1294,7 +1294,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "84",
 				"image_src" : "IMG_7378.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,836363889",
 				"long" : "27,200144444",
 				"datetime" : "2019:05:15 08:52:17",
@@ -1311,7 +1311,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "85",
 				"image_src" : "IMG_7379.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,836388889",
 				"long" : "27,200263889",
 				"datetime" : "2019:05:15 08:52:27",
@@ -1328,7 +1328,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "86",
 				"image_src" : "IMG_7380.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,836455556",
 				"long" : "27,2004277780001",
 				"datetime" : "2019:05:15 08:52:37",
@@ -1345,7 +1345,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "87",
 				"image_src" : "IMG_7381.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8364611110001",
 				"long" : "27,2004305560001",
 				"datetime" : "2019:05:15 08:52:42",
@@ -1362,7 +1362,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "88",
 				"image_src" : "IMG_7382.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,836575",
 				"long" : "27,200366667",
 				"datetime" : "2019:05:15 08:53:18",
@@ -1379,7 +1379,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "89",
 				"image_src" : "IMG_7383.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8366583330001",
 				"long" : "27,200236111",
 				"datetime" : "2019:05:15 08:53:36",
@@ -1396,7 +1396,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "90",
 				"image_src" : "IMG_7384.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,836841667",
 				"long" : "27,2001138890001",
 				"datetime" : "2019:05:15 08:54:03",
@@ -1413,7 +1413,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "91",
 				"image_src" : "IMG_7392.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,836880556",
 				"long" : "27,2004944440001",
 				"datetime" : "2019:05:15 08:55:37",
@@ -1430,7 +1430,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "92",
 				"image_src" : "IMG_7394.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8367361110001",
 				"long" : "27,2015111110001",
 				"datetime" : "2019:05:15 08:58:33",
@@ -1447,7 +1447,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "93",
 				"image_src" : "IMG_7396.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8366777780001",
 				"long" : "27,2017138890001",
 				"datetime" : "2019:05:15 08:58:53",
@@ -1464,7 +1464,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "94",
 				"image_src" : "IMG_7397.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8366777780001",
 				"long" : "27,201905556",
 				"datetime" : "2019:05:15 08:59:15",
@@ -1481,7 +1481,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "95",
 				"image_src" : "IMG_7398.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8369527780001",
 				"long" : "27,202841667",
 				"datetime" : "2019:05:15 09:00:28",
@@ -1498,7 +1498,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "96",
 				"image_src" : "IMG_7399.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,837036111",
 				"long" : "27,2028388890001",
 				"datetime" : "2019:05:15 09:02:10",
@@ -1515,7 +1515,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "97",
 				"image_src" : "IMG_7400.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8371666670001",
 				"long" : "27,202944444",
 				"datetime" : "2019:05:15 09:02:19",
@@ -1532,7 +1532,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "98",
 				"image_src" : "IMG_7401.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8373916670001",
 				"long" : "27,2026666670001",
 				"datetime" : "2019:05:15 09:02:53",
@@ -1549,7 +1549,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "99",
 				"image_src" : "IMG_7402.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8375083330001",
 				"long" : "27,202655556",
 				"datetime" : "2019:05:15 09:03:03",
@@ -1566,7 +1566,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "100",
 				"image_src" : "IMG_7403.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,837516667",
 				"long" : "27,202655556",
 				"datetime" : "2019:05:15 09:03:05",
@@ -1583,7 +1583,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "101",
 				"image_src" : "IMG_7404.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8377",
 				"long" : "27,2028611110001",
 				"datetime" : "2019:05:15 09:03:38",
@@ -1600,7 +1600,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "102",
 				"image_src" : "IMG_7405.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8377",
 				"long" : "27,2028527780001",
 				"datetime" : "2019:05:15 09:03:40",
@@ -1617,7 +1617,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "103",
 				"image_src" : "IMG_7406.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8378638890001",
 				"long" : "27,202975",
 				"datetime" : "2019:05:15 09:04:14",
@@ -1634,7 +1634,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "104",
 				"image_src" : "IMG_7407.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,837922222",
 				"long" : "27,2030638890001",
 				"datetime" : "2019:05:15 09:04:29",
@@ -1651,7 +1651,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "105",
 				"image_src" : "IMG_7408.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8379833330001",
 				"long" : "27,203372222",
 				"datetime" : "2019:05:15 09:04:54",
@@ -1668,7 +1668,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "106",
 				"image_src" : "IMG_7409.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8379583330001",
 				"long" : "27,2034194440001",
 				"datetime" : "2019:05:15 09:05:10",
@@ -1685,7 +1685,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "107",
 				"image_src" : "IMG_7410.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8381416670001",
 				"long" : "27,2036416670001",
 				"datetime" : "2019:05:15 09:05:46",
@@ -1702,7 +1702,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "108",
 				"image_src" : "IMG_7411.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,838147222",
 				"long" : "27,2036416670001",
 				"datetime" : "2019:05:15 09:05:48",
@@ -1719,7 +1719,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "109",
 				"image_src" : "IMG_7412.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8382222220001",
 				"long" : "27,203836111",
 				"datetime" : "2019:05:15 09:06:07",
@@ -1736,7 +1736,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "110",
 				"image_src" : "IMG_7413.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,838455556",
 				"long" : "27,2040388890001",
 				"datetime" : "2019:05:15 09:06:54",
@@ -1753,7 +1753,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "111",
 				"image_src" : "IMG_7414.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,838480556",
 				"long" : "27,2039638890001",
 				"datetime" : "2019:05:15 09:07:01",
@@ -1770,7 +1770,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "112",
 				"image_src" : "IMG_7415.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,838466667",
 				"long" : "27,2039694440001",
 				"datetime" : "2019:05:15 09:07:09",
@@ -1787,7 +1787,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "113",
 				"image_src" : "IMG_7416.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,838427778",
 				"long" : "27,2042777780001",
 				"datetime" : "2019:05:15 09:07:28",
@@ -1804,7 +1804,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "114",
 				"image_src" : "IMG_7417.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8383944440001",
 				"long" : "27,2043305560001",
 				"datetime" : "2019:05:15 09:07:37",
@@ -1821,7 +1821,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "115",
 				"image_src" : "IMG_7418.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,838402778",
 				"long" : "27,204375",
 				"datetime" : "2019:05:15 09:07:46",
@@ -1838,7 +1838,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "116",
 				"image_src" : "IMG_7419.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8384444440001",
 				"long" : "27,205305556",
 				"datetime" : "2019:05:15 09:08:29",
@@ -1855,7 +1855,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "117",
 				"image_src" : "IMG_7420.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,838586111",
 				"long" : "27,2062083330001",
 				"datetime" : "2019:05:15 09:09:18",
@@ -1872,7 +1872,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "118",
 				"image_src" : "IMG_7421.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,838611111",
 				"long" : "27,2062333330001",
 				"datetime" : "2019:05:15 09:09:42",
@@ -1889,7 +1889,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "119",
 				"image_src" : "IMG_7422.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,838825",
 				"long" : "27,206336111",
 				"datetime" : "2019:05:15 09:10:09",
@@ -1906,7 +1906,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "120",
 				"image_src" : "IMG_7432.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8391",
 				"long" : "27,2068333330001",
 				"datetime" : "2019:05:15 09:11:26",
@@ -1923,7 +1923,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "121",
 				"image_src" : "IMG_7433.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,839316667",
 				"long" : "27,207377778",
 				"datetime" : "2019:05:15 09:11:59",
@@ -1940,7 +1940,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "122",
 				"image_src" : "IMG_7434.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8394138890001",
 				"long" : "27,2076250000001",
 				"datetime" : "2019:05:15 09:12:30",
@@ -1957,7 +1957,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "123",
 				"image_src" : "IMG_7435.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8396111110001",
 				"long" : "27,207827778",
 				"datetime" : "2019:05:15 09:12:56",
@@ -1974,7 +1974,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "124",
 				"image_src" : "IMG_7441.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8397555560001",
 				"long" : "27,208266667",
 				"datetime" : "2019:05:15 09:13:52",
@@ -1991,7 +1991,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "125",
 				"image_src" : "IMG_7442.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8398583330001",
 				"long" : "27,208388889",
 				"datetime" : "2019:05:15 09:14:17",
@@ -2008,7 +2008,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "126",
 				"image_src" : "IMG_7443.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8402055560001",
 				"long" : "27,208661111",
 				"datetime" : "2019:05:15 09:15:15",
@@ -2025,7 +2025,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "127",
 				"image_src" : "IMG_7444.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8404611110001",
 				"long" : "27,208886111",
 				"datetime" : "2019:05:15 09:19:29",
@@ -2042,7 +2042,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "128",
 				"image_src" : "IMG_7445.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8404583330001",
 				"long" : "27,208886111",
 				"datetime" : "2019:05:15 09:19:31",
@@ -2059,7 +2059,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "129",
 				"image_src" : "IMG_7448.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8404583330001",
 				"long" : "27,2090166670001",
 				"datetime" : "2019:05:15 09:19:58",
@@ -2076,7 +2076,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "130",
 				"image_src" : "IMG_7449.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,840480556",
 				"long" : "27,209019444",
 				"datetime" : "2019:05:15 09:20:08",
@@ -2093,7 +2093,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "131",
 				"image_src" : "IMG_7450.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,840569444",
 				"long" : "27,2091861110001",
 				"datetime" : "2019:05:15 09:20:30",
@@ -2110,7 +2110,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "132",
 				"image_src" : "IMG_7451.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8406305560001",
 				"long" : "27,209355556",
 				"datetime" : "2019:05:15 09:20:41",
@@ -2127,7 +2127,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "133",
 				"image_src" : "IMG_7452.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8409694440001",
 				"long" : "27,2105444440001",
 				"datetime" : "2019:05:15 09:22:31",
@@ -2144,7 +2144,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "134",
 				"image_src" : "IMG_7454.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8410388890001",
 				"long" : "27,210780556",
 				"datetime" : "2019:05:15 09:22:54",
@@ -2161,7 +2161,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "135",
 				"image_src" : "IMG_7455.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8410638890001",
 				"long" : "27,210833333",
 				"datetime" : "2019:05:15 09:23:02",
@@ -2178,7 +2178,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "136",
 				"image_src" : "IMG_7456.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8411222220001",
 				"long" : "27,211216667",
 				"datetime" : "2019:05:15 09:23:24",
@@ -2195,7 +2195,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "137",
 				"image_src" : "IMG_7457.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,841113889",
 				"long" : "27,211241667",
 				"datetime" : "2019:05:15 09:23:36",
@@ -2212,7 +2212,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "138",
 				"image_src" : "IMG_7458.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8412555560001",
 				"long" : "27,2115916670001",
 				"datetime" : "2019:05:15 09:24:47",
@@ -2229,7 +2229,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "139",
 				"image_src" : "IMG_7459.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,842552778",
 				"long" : "27,2137222220001",
 				"datetime" : "2019:05:15 09:27:46",
@@ -2246,7 +2246,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "140",
 				"image_src" : "IMG_7460.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,842566667",
 				"long" : "27,2137500000001",
 				"datetime" : "2019:05:15 09:27:57",
@@ -2263,7 +2263,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "141",
 				"image_src" : "IMG_7461.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8425833330001",
 				"long" : "27,2138166670001",
 				"datetime" : "2019:05:15 09:28:06",
@@ -2280,7 +2280,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "142",
 				"image_src" : "IMG_7462.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8431277780001",
 				"long" : "27,215636111",
 				"datetime" : "2019:05:15 09:29:41",
@@ -2297,7 +2297,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "143",
 				"image_src" : "IMG_7463.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,843163889",
 				"long" : "27,215625",
 				"datetime" : "2019:05:15 09:29:53",
@@ -2314,7 +2314,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "144",
 				"image_src" : "IMG_7464.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,843163889",
 				"long" : "27,215625",
 				"datetime" : "2019:05:15 09:29:55",
@@ -2331,7 +2331,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "145",
 				"image_src" : "IMG_7465.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8434861110001",
 				"long" : "27,2158277780001",
 				"datetime" : "2019:05:15 09:30:42",
@@ -2348,7 +2348,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "146",
 				"image_src" : "IMG_7466.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,843613889",
 				"long" : "27,21585",
 				"datetime" : "2019:05:15 09:31:07",
@@ -2365,7 +2365,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "147",
 				"image_src" : "IMG_7467.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,843813889",
 				"long" : "27,2158527780001",
 				"datetime" : "2019:05:15 09:31:27",
@@ -2382,7 +2382,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "148",
 				"image_src" : "IMG_7468.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8440944440001",
 				"long" : "27,2164888890001",
 				"datetime" : "2019:05:15 09:32:35",
@@ -2399,7 +2399,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "149",
 				"image_src" : "IMG_7469.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8440972220001",
 				"long" : "27,216536111",
 				"datetime" : "2019:05:15 09:32:51",
@@ -2416,7 +2416,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "150",
 				"image_src" : "IMG_7470.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8440944440001",
 				"long" : "27,216652778",
 				"datetime" : "2019:05:15 09:33:06",
@@ -2433,7 +2433,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "151",
 				"image_src" : "IMG_7471.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8440972220001",
 				"long" : "27,216802778",
 				"datetime" : "2019:05:15 09:33:20",
@@ -2450,7 +2450,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "152",
 				"image_src" : "IMG_7472.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,844105556",
 				"long" : "27,2168083330001",
 				"datetime" : "2019:05:15 09:33:27",
@@ -2467,7 +2467,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "153",
 				"image_src" : "IMG_7473.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,843902778",
 				"long" : "27,2173583330001",
 				"datetime" : "2019:05:15 09:34:12",
@@ -2484,7 +2484,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "154",
 				"image_src" : "IMG_7474.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8441722220001",
 				"long" : "27,2186861110001",
 				"datetime" : "2019:05:15 09:35:30",
@@ -2501,7 +2501,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "155",
 				"image_src" : "IMG_7475.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,844313889",
 				"long" : "27,2191",
 				"datetime" : "2019:05:15 09:36:13",
@@ -2518,7 +2518,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "156",
 				"image_src" : "IMG_7476.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8443083330001",
 				"long" : "27,2191083330001",
 				"datetime" : "2019:05:15 09:36:13",
@@ -2535,7 +2535,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "157",
 				"image_src" : "IMG_7477.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8445694440001",
 				"long" : "27,2206722220001",
 				"datetime" : "2019:05:15 09:37:24",
@@ -2552,7 +2552,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "158",
 				"image_src" : "IMG_7478.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,844683333",
 				"long" : "27,2210777780001",
 				"datetime" : "2019:05:15 09:37:42",
@@ -2569,7 +2569,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "159",
 				"image_src" : "IMG_7479.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8447694440001",
 				"long" : "27,221919444",
 				"datetime" : "2019:05:15 09:38:22",
@@ -2586,7 +2586,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "160",
 				"image_src" : "IMG_7480.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,844936111",
 				"long" : "27,2227333330001",
 				"datetime" : "2019:05:15 09:39:05",
@@ -2603,7 +2603,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "161",
 				"image_src" : "IMG_7481.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,844936111",
 				"long" : "27,222730556",
 				"datetime" : "2019:05:15 09:39:09",
@@ -2620,7 +2620,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "162",
 				"image_src" : "IMG_7482.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,844936111",
 				"long" : "27,2227333330001",
 				"datetime" : "2019:05:15 09:39:14",
@@ -2637,7 +2637,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "163",
 				"image_src" : "IMG_7483.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,845427778",
 				"long" : "27,2250583330001",
 				"datetime" : "2019:05:15 09:41:41",
@@ -2654,7 +2654,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "164",
 				"image_src" : "IMG_7484.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,845425",
 				"long" : "27,2250333330001",
 				"datetime" : "2019:05:15 09:41:42",
@@ -2671,7 +2671,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "165",
 				"image_src" : "IMG_7485.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,845425",
 				"long" : "27,2250333330001",
 				"datetime" : "2019:05:15 09:41:44",
@@ -2688,7 +2688,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "166",
 				"image_src" : "IMG_7486.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,845425",
 				"long" : "27,2250333330001",
 				"datetime" : "2019:05:15 09:41:51",
@@ -2705,7 +2705,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "167",
 				"image_src" : "IMG_7487.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,845680556",
 				"long" : "27,2263861110001",
 				"datetime" : "2019:05:15 09:43:18",
@@ -2722,7 +2722,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "168",
 				"image_src" : "IMG_7488.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8456694440001",
 				"long" : "27,2264000000001",
 				"datetime" : "2019:05:15 09:43:21",
@@ -2739,7 +2739,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "169",
 				"image_src" : "IMG_7491.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,845825",
 				"long" : "27,2264750000001",
 				"datetime" : "2019:05:15 09:44:07",
@@ -2756,7 +2756,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "170",
 				"image_src" : "IMG_7492.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,845902778",
 				"long" : "27,227594444",
 				"datetime" : "2019:05:15 09:45:35",
@@ -2773,7 +2773,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "171",
 				"image_src" : "IMG_7493.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,845902778",
 				"long" : "27,2276138890001",
 				"datetime" : "2019:05:15 09:45:40",
@@ -2790,7 +2790,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "172",
 				"image_src" : "IMG_7494.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,846111111",
 				"long" : "27,227636111",
 				"datetime" : "2019:05:15 09:46:11",
@@ -2807,7 +2807,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "173",
 				"image_src" : "IMG_7495.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,847466667",
 				"long" : "27,228377778",
 				"datetime" : "2019:05:15 09:48:46",
@@ -2824,7 +2824,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "174",
 				"image_src" : "IMG_7496.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,847477778",
 				"long" : "27,2283277780001",
 				"datetime" : "2019:05:15 09:48:52",
@@ -2841,7 +2841,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "175",
 				"image_src" : "IMG_7497.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8486833330001",
 				"long" : "27,228377778",
 				"datetime" : "2019:05:15 09:50:54",
@@ -2858,7 +2858,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "176",
 				"image_src" : "IMG_7498.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8491777780001",
 				"long" : "27,2252083330001",
 				"datetime" : "2019:05:15 09:56:44",
@@ -2875,7 +2875,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "177",
 				"image_src" : "IMG_7499.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8486722220001",
 				"long" : "27,2233555560001",
 				"datetime" : "2019:05:15 09:59:00",
@@ -2892,7 +2892,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "178",
 				"image_src" : "IMG_7500.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8486722220001",
 				"long" : "27,2233416670001",
 				"datetime" : "2019:05:15 09:59:01",
@@ -2909,7 +2909,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "179",
 				"image_src" : "IMG_7501.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8485944440001",
 				"long" : "27,222913889",
 				"datetime" : "2019:05:15 09:59:11",
@@ -2926,7 +2926,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "180",
 				"image_src" : "IMG_7502.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8485805560001",
 				"long" : "27,2228777780001",
 				"datetime" : "2019:05:15 09:59:14",
@@ -2943,7 +2943,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "181",
 				"image_src" : "IMG_7503.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,848602778",
 				"long" : "27,2221000000001",
 				"datetime" : "2019:05:15 10:00:00",
@@ -2960,7 +2960,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "182",
 				"image_src" : "IMG_7504.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8485555560001",
 				"long" : "27,2208944440001",
 				"datetime" : "2019:05:15 10:01:18",
@@ -2977,7 +2977,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "183",
 				"image_src" : "IMG_7505.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8485555560001",
 				"long" : "27,2208972220001",
 				"datetime" : "2019:05:15 10:01:20",
@@ -2994,7 +2994,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "184",
 				"image_src" : "IMG_7506.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8485555560001",
 				"long" : "27,2208972220001",
 				"datetime" : "2019:05:15 10:01:22",
@@ -3011,7 +3011,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "185",
 				"image_src" : "IMG_7507.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,848427778",
 				"long" : "27,2201666670001",
 				"datetime" : "2019:05:15 10:03:43",
@@ -3028,7 +3028,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "186",
 				"image_src" : "IMG_7508.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,848427778",
 				"long" : "27,220172222",
 				"datetime" : "2019:05:15 10:03:53",
@@ -3045,7 +3045,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "187",
 				"image_src" : "IMG_7509.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8484222220001",
 				"long" : "27,220161111",
 				"datetime" : "2019:05:15 10:03:55",
@@ -3062,7 +3062,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "188",
 				"image_src" : "IMG_7510.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,849247222",
 				"long" : "27,220358333",
 				"datetime" : "2019:05:15 10:05:31",
@@ -3079,7 +3079,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "189",
 				"image_src" : "IMG_7511.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,849247222",
 				"long" : "27,220358333",
 				"datetime" : "2019:05:15 10:05:32",
@@ -3096,7 +3096,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "190",
 				"image_src" : "IMG_7512.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8492444440001",
 				"long" : "27,2203527780001",
 				"datetime" : "2019:05:15 10:05:35",
@@ -3113,7 +3113,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "191",
 				"image_src" : "IMG_7513.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,849247222",
 				"long" : "27,220347222",
 				"datetime" : "2019:05:15 10:05:38",
@@ -3130,7 +3130,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "192",
 				"image_src" : "IMG_7514.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,849247222",
 				"long" : "27,220347222",
 				"datetime" : "2019:05:15 10:05:40",
@@ -3147,7 +3147,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "193",
 				"image_src" : "IMG_7515.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,849247222",
 				"long" : "27,220347222",
 				"datetime" : "2019:05:15 10:05:42",
@@ -3164,7 +3164,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "194",
 				"image_src" : "IMG_7516.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,849247222",
 				"long" : "27,220347222",
 				"datetime" : "2019:05:15 10:05:43",
@@ -3181,7 +3181,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "195",
 				"image_src" : "IMG_7517.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8493333330001",
 				"long" : "27,220636111",
 				"datetime" : "2019:05:15 10:06:27",
@@ -3198,7 +3198,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "196",
 				"image_src" : "IMG_7518.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8493",
 				"long" : "27,220741667",
 				"datetime" : "2019:05:15 10:06:40",
@@ -3215,7 +3215,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "197",
 				"image_src" : "IMG_7519.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,849291667",
 				"long" : "27,2207361110001",
 				"datetime" : "2019:05:15 10:06:42",
@@ -3232,7 +3232,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "198",
 				"image_src" : "IMG_7520.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8500638890001",
 				"long" : "27,221419444",
 				"datetime" : "2019:05:15 10:08:49",
@@ -3249,7 +3249,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "199",
 				"image_src" : "IMG_7521.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8500583330001",
 				"long" : "27,221430556",
 				"datetime" : "2019:05:15 10:08:49",
@@ -3266,7 +3266,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "200",
 				"image_src" : "IMG_7523.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8515972220001",
 				"long" : "27,2224722220001",
 				"datetime" : "2019:05:15 10:11:22",
@@ -3283,7 +3283,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "201",
 				"image_src" : "IMG_7524.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,853111111",
 				"long" : "27,2231416670001",
 				"datetime" : "2019:05:15 10:14:14",
@@ -3300,7 +3300,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "202",
 				"image_src" : "IMG_7525.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,853772222",
 				"long" : "27,2233055560001",
 				"datetime" : "2019:05:15 10:15:25",
@@ -3317,7 +3317,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "203",
 				"image_src" : "IMG_7526.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8537972220001",
 				"long" : "27,223241667",
 				"datetime" : "2019:05:15 10:15:30",
@@ -3334,7 +3334,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "204",
 				"image_src" : "IMG_7527.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,853813889",
 				"long" : "27,2232333330001",
 				"datetime" : "2019:05:15 10:15:41",
@@ -3351,7 +3351,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "205",
 				"image_src" : "IMG_7528.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,853813889",
 				"long" : "27,223216667",
 				"datetime" : "2019:05:15 10:15:51",
@@ -3368,7 +3368,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "206",
 				"image_src" : "IMG_7529.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8539388890001",
 				"long" : "27,2229833330001",
 				"datetime" : "2019:05:15 10:16:08",
@@ -3385,7 +3385,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "207",
 				"image_src" : "IMG_7530.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,853947222",
 				"long" : "27,2229611110001",
 				"datetime" : "2019:05:15 10:16:16",
@@ -3402,7 +3402,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "208",
 				"image_src" : "IMG_7531.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8541361110001",
 				"long" : "27,2230888890001",
 				"datetime" : "2019:05:15 10:16:35",
@@ -3419,7 +3419,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "209",
 				"image_src" : "IMG_7532.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8543916670001",
 				"long" : "27,2226250000001",
 				"datetime" : "2019:05:15 10:17:06",
@@ -3436,7 +3436,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "210",
 				"image_src" : "IMG_7533.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8544055560001",
 				"long" : "27,222636111",
 				"datetime" : "2019:05:15 10:17:08",
@@ -3453,7 +3453,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "211",
 				"image_src" : "IMG_7534.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,854897222",
 				"long" : "27,2223472220001",
 				"datetime" : "2019:05:15 10:18:15",
@@ -3470,7 +3470,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "212",
 				"image_src" : "IMG_7535.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8557083330001",
 				"long" : "27,221205556",
 				"datetime" : "2019:05:15 10:19:53",
@@ -3487,7 +3487,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "213",
 				"image_src" : "IMG_7536.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8557138890001",
 				"long" : "27,2212138890001",
 				"datetime" : "2019:05:15 10:19:55",
@@ -3504,7 +3504,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "214",
 				"image_src" : "IMG_7537.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8558305560001",
 				"long" : "27,2210805560001",
 				"datetime" : "2019:05:15 10:20:13",
@@ -3521,7 +3521,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "215",
 				"image_src" : "IMG_7538.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,855994444",
 				"long" : "27,220819444",
 				"datetime" : "2019:05:15 10:20:35",
@@ -3538,7 +3538,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "216",
 				"image_src" : "IMG_7539.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8563500000001",
 				"long" : "27,219697222",
 				"datetime" : "2019:05:15 10:22:13",
@@ -3555,7 +3555,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "217",
 				"image_src" : "IMG_7540.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,85625",
 				"long" : "27,219563889",
 				"datetime" : "2019:05:15 10:22:28",
@@ -3572,7 +3572,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "218",
 				"image_src" : "IMG_7541.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565222220001",
 				"long" : "27,2192277780001",
 				"datetime" : "2019:05:15 10:23:33",
@@ -3589,7 +3589,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "219",
 				"image_src" : "IMG_7542.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565222220001",
 				"long" : "27,219222222",
 				"datetime" : "2019:05:15 10:23:34",
@@ -3606,7 +3606,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "220",
 				"image_src" : "IMG_7543.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8565222220001",
 				"long" : "27,219219444",
 				"datetime" : "2019:05:15 10:23:36",
@@ -3623,7 +3623,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "221",
 				"image_src" : "IMG_7544.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8569805560001",
 				"long" : "27,218972222",
 				"datetime" : "2019:05:15 10:24:33",
@@ -3640,7 +3640,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "222",
 				"image_src" : "IMG_7545.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8569805560001",
 				"long" : "27,218972222",
 				"datetime" : "2019:05:15 10:24:34",
@@ -3657,7 +3657,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "223",
 				"image_src" : "IMG_7546.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8569805560001",
 				"long" : "27,218972222",
 				"datetime" : "2019:05:15 10:24:38",
@@ -3674,7 +3674,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "224",
 				"image_src" : "IMG_7547.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8569805560001",
 				"long" : "27,218972222",
 				"datetime" : "2019:05:15 10:24:39",
@@ -3691,7 +3691,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "225",
 				"image_src" : "IMG_7548.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8569805560001",
 				"long" : "27,218972222",
 				"datetime" : "2019:05:15 10:24:40",
@@ -3708,7 +3708,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "226",
 				"image_src" : "IMG_7549.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8569805560001",
 				"long" : "27,218972222",
 				"datetime" : "2019:05:15 10:24:40",
@@ -3725,7 +3725,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "227",
 				"image_src" : "IMG_7550.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8574944440001",
 				"long" : "27,2189472220001",
 				"datetime" : "2019:05:15 10:25:36",
@@ -3742,7 +3742,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "228",
 				"image_src" : "IMG_7551.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8574944440001",
 				"long" : "27,2189472220001",
 				"datetime" : "2019:05:15 10:25:37",
@@ -3759,7 +3759,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "229",
 				"image_src" : "IMG_7552.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8574944440001",
 				"long" : "27,2189472220001",
 				"datetime" : "2019:05:15 10:25:37",
@@ -3776,7 +3776,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "230",
 				"image_src" : "IMG_7553.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8574944440001",
 				"long" : "27,2189472220001",
 				"datetime" : "2019:05:15 10:25:38",
@@ -3793,7 +3793,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "231",
 				"image_src" : "IMG_7554.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,857825",
 				"long" : "27,2179611110001",
 				"datetime" : "2019:05:15 10:27:29",
@@ -3810,7 +3810,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "232",
 				"image_src" : "IMG_7555.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,857822222",
 				"long" : "27,2179611110001",
 				"datetime" : "2019:05:15 10:27:30",
@@ -3827,7 +3827,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "233",
 				"image_src" : "IMG_7556.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,857822222",
 				"long" : "27,2179583330001",
 				"datetime" : "2019:05:15 10:27:31",
@@ -3844,7 +3844,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "234",
 				"image_src" : "IMG_7557.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,857822222",
 				"long" : "27,21795",
 				"datetime" : "2019:05:15 10:27:45",
@@ -3861,7 +3861,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "235",
 				"image_src" : "IMG_7574.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,864027778",
 				"long" : "27,203594444",
 				"datetime" : "2019:05:15 10:48:45",
@@ -3878,7 +3878,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "236",
 				"image_src" : "IMG_7575.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8641555560001",
 				"long" : "27,203122222",
 				"datetime" : "2019:05:15 10:49:22",
@@ -3895,7 +3895,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "237",
 				"image_src" : "IMG_7576.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8641555560001",
 				"long" : "27,203122222",
 				"datetime" : "2019:05:15 10:49:23",
@@ -3912,7 +3912,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "238",
 				"image_src" : "IMG_7577.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,8641555560001",
 				"long" : "27,203122222",
 				"datetime" : "2019:05:15 10:49:25",
@@ -3929,7 +3929,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "239",
 				"image_src" : "IMG_7578.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8636805560001",
 				"long" : "27,1928444440001",
 				"datetime" : "2019:05:15 10:58:20",
@@ -3946,7 +3946,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "240",
 				"image_src" : "IMG_7579.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8636861110001",
 				"long" : "27,1928583330001",
 				"datetime" : "2019:05:15 10:58:23",
@@ -3963,7 +3963,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "241",
 				"image_src" : "IMG_7580.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,863708333",
 				"long" : "27,192811111",
 				"datetime" : "2019:05:15 10:58:24",
@@ -3980,7 +3980,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "242",
 				"image_src" : "IMG_7581.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8588250000001",
 				"long" : "27,189413889",
 				"datetime" : "2019:05:15 11:04:44",
@@ -3997,7 +3997,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "243",
 				"image_src" : "IMG_7582.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8587583330001",
 				"long" : "27,190380556",
 				"datetime" : "2019:05:15 11:05:24",
@@ -4014,7 +4014,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "244",
 				"image_src" : "IMG_7583.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,858761111",
 				"long" : "27,190508333",
 				"datetime" : "2019:05:15 11:05:32",
@@ -4031,7 +4031,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "246",
 				"image_src" : "IMG_7585.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,858722222",
 				"long" : "27,190555556",
 				"datetime" : "2019:05:15 11:05:39",
@@ -4048,7 +4048,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "247",
 				"image_src" : "IMG_7586.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8587138890001",
 				"long" : "27,190541667",
 				"datetime" : "2019:05:15 11:05:45",
@@ -4065,7 +4065,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "249",
 				"image_src" : "IMG_7588.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,858697222",
 				"long" : "27,1906277780001",
 				"datetime" : "2019:05:15 11:05:57",
@@ -4082,7 +4082,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "250",
 				"image_src" : "IMG_7602.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,855494444",
 				"long" : "27,1885333330001",
 				"datetime" : "2019:05:15 11:10:54",
@@ -4099,7 +4099,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "251",
 				"image_src" : "IMG_7603.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8554583330001",
 				"long" : "27,188541667",
 				"datetime" : "2019:05:15 11:11:00",
@@ -4116,7 +4116,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "252",
 				"image_src" : "IMG_7604.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8554",
 				"long" : "27,1884138890001",
 				"datetime" : "2019:05:15 11:11:10",
@@ -4133,7 +4133,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "253",
 				"image_src" : "IMG_7605.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,855391667",
 				"long" : "27,1883472220001",
 				"datetime" : "2019:05:15 11:11:14",
@@ -4150,7 +4150,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "254",
 				"image_src" : "IMG_7606.JPG",
-				"name" : "Мусор",
+				"type":  "Мусор",
 				"lat" : "59,85535",
 				"long" : "27,1882944440001",
 				"datetime" : "2019:05:15 11:11:25",
@@ -4167,7 +4167,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "255",
 				"image_src" : "IMG_7607.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,85535",
 				"long" : "27,1882944440001",
 				"datetime" : "2019:05:15 11:11:26",
@@ -4184,7 +4184,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "256",
 				"image_src" : "IMG_7608.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,85535",
 				"long" : "27,1882944440001",
 				"datetime" : "2019:05:15 11:11:27",
@@ -4201,7 +4201,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "257",
 				"image_src" : "IMG_7609.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,85535",
 				"long" : "27,1882944440001",
 				"datetime" : "2019:05:15 11:11:27",
@@ -4218,7 +4218,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "258",
 				"image_src" : "IMG_7610.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,855347222",
 				"long" : "27,1882833330001",
 				"datetime" : "2019:05:15 11:11:28",
@@ -4235,7 +4235,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "259",
 				"image_src" : "IMG_7611.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,854502778",
 				"long" : "27,1839444440001",
 				"datetime" : "2019:05:15 11:15:19",
@@ -4252,7 +4252,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "260",
 				"image_src" : "IMG_7612.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8545083330001",
 				"long" : "27,183938889",
 				"datetime" : "2019:05:15 11:15:21",
@@ -4269,7 +4269,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "261",
 				"image_src" : "IMG_7613.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8540305560001",
 				"long" : "27,1838638890001",
 				"datetime" : "2019:05:15 11:16:09",
@@ -4286,7 +4286,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "262",
 				"image_src" : "IMG_7614.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8536388890001",
 				"long" : "27,183686111",
 				"datetime" : "2019:05:15 11:16:45",
@@ -4303,7 +4303,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "263",
 				"image_src" : "IMG_7615.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,853641667",
 				"long" : "27,1837055560001",
 				"datetime" : "2019:05:15 11:16:47",
@@ -4320,7 +4320,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "264",
 				"image_src" : "IMG_7616.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,853602778",
 				"long" : "27,1837",
 				"datetime" : "2019:05:15 11:16:52",
@@ -4337,7 +4337,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "265",
 				"image_src" : "IMG_7617.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,853533333",
 				"long" : "27,1836555560001",
 				"datetime" : "2019:05:15 11:17:02",
@@ -4354,7 +4354,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "266",
 				"image_src" : "IMG_7618.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,846102778",
 				"long" : "27,1843527780001",
 				"datetime" : "2019:05:15 11:26:24",
@@ -4371,7 +4371,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "267",
 				"image_src" : "IMG_7619.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8461",
 				"long" : "27,1843500000001",
 				"datetime" : "2019:05:15 11:26:25",
@@ -4388,7 +4388,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "268",
 				"image_src" : "IMG_7620.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8454027780001",
 				"long" : "27,1878861110001",
 				"datetime" : "2019:05:15 11:28:51",
@@ -4405,7 +4405,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "269",
 				"image_src" : "IMG_7621.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8450083330001",
 				"long" : "27,1895500000001",
 				"datetime" : "2019:05:15 11:30:02",
@@ -4422,7 +4422,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "271",
 				"image_src" : "IMG_7623.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8450388890001",
 				"long" : "27,190077778",
 				"datetime" : "2019:05:15 11:30:28",
@@ -4439,7 +4439,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "272",
 				"image_src" : "IMG_7624.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8450388890001",
 				"long" : "27,1900833330001",
 				"datetime" : "2019:05:15 11:30:32",
@@ -4456,7 +4456,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "273",
 				"image_src" : "IMG_7625.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8417388890001",
 				"long" : "27,191633333",
 				"datetime" : "2019:05:15 11:38:18",
@@ -4473,7 +4473,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "274",
 				"image_src" : "IMG_7626.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,841733333",
 				"long" : "27,191647222",
 				"datetime" : "2019:05:15 11:38:23",
@@ -4490,7 +4490,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "275",
 				"image_src" : "IMG_7627.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,841733333",
 				"long" : "27,191647222",
 				"datetime" : "2019:05:15 11:38:24",
@@ -4507,7 +4507,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "276",
 				"image_src" : "IMG_7628.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,839527778",
 				"long" : "27,195105556",
 				"datetime" : "2019:05:15 11:42:04",
@@ -4524,7 +4524,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "277",
 				"image_src" : "IMG_7629.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8369000000001",
 				"long" : "27,1974388890001",
 				"datetime" : "2019:05:15 12:11:09",
@@ -4541,7 +4541,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "278",
 				"image_src" : "IMG_7630.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,836708333",
 				"long" : "27,1977416670001",
 				"datetime" : "2019:05:15 12:12:07",
@@ -4558,7 +4558,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "279",
 				"image_src" : "IMG_7631.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8369611110001",
 				"long" : "27,1981805560001",
 				"datetime" : "2019:05:15 12:12:48",
@@ -4575,7 +4575,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "280",
 				"image_src" : "IMG_7632.JPG",
-				"name" : "Опасность",
+				"type":  "Опасность",
 				"lat" : "59,8370583330001",
 				"long" : "27,1979666670001",
 				"datetime" : "2019:05:15 12:13:00",
@@ -4592,7 +4592,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "281",
 				"image_src" : "IMG_7633.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8371805560001",
 				"long" : "27,197866667",
 				"datetime" : "2019:05:15 12:13:25",
@@ -4609,7 +4609,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "282",
 				"image_src" : "IMG_7634.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,837197222",
 				"long" : "27,1977666670001",
 				"datetime" : "2019:05:15 12:13:35",
@@ -4626,7 +4626,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "283",
 				"image_src" : "IMG_7635.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8372416670001",
 				"long" : "27,198016667",
 				"datetime" : "2019:05:15 12:13:42",
@@ -4640,7 +4640,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "284",
 				"image_src" : "IMG_7636.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "",
 				"long" : "",
 				"datetime" : "2019:05:15 12:20:36",
@@ -4657,7 +4657,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "285",
 				"image_src" : "IMG_7637.JPG",
-				"name" : "Фотографии",
+				"type":  "Фотографии",
 				"lat" : "59,8363583330001",
 				"long" : "27,190644444",
 				"datetime" : "2019:05:15 12:20:39",
@@ -4674,7 +4674,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "286",
 				"image_src" : "IMG_7638.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,836177778",
 				"long" : "27,1904166670001",
 				"datetime" : "2019:05:15 12:21:07",
@@ -4691,7 +4691,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "287",
 				"image_src" : "IMG_7639.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,836166667",
 				"long" : "27,1904250000001",
 				"datetime" : "2019:05:15 12:21:09",
@@ -4708,7 +4708,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "288",
 				"image_src" : "IMG_7640.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,836163889",
 				"long" : "27,1904138890001",
 				"datetime" : "2019:05:15 12:21:11",
@@ -4725,7 +4725,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "289",
 				"image_src" : "IMG_7641.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,836163889",
 				"long" : "27,1904111110001",
 				"datetime" : "2019:05:15 12:21:11",
@@ -4739,7 +4739,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "290",
 				"image_src" : "IMG_7642.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "",
 				"long" : "",
 				"datetime" : "",
@@ -4756,7 +4756,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "291",
 				"image_src" : "IMG_7643.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,836205556",
 				"long" : "27,1906472220001",
 				"datetime" : "2019:05:15 12:22:57",
@@ -4773,7 +4773,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "292",
 				"image_src" : "IMG_7644.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8361444440001",
 				"long" : "27,1904666670001",
 				"datetime" : "2019:05:15 12:23:00",
@@ -4790,7 +4790,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "293",
 				"image_src" : "IMG_7645.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8361444440001",
 				"long" : "27,1902777780001",
 				"datetime" : "2019:05:15 12:23:18",
@@ -4807,7 +4807,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "294",
 				"image_src" : "IMG_7646.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8361166670001",
 				"long" : "27,1900666670001",
 				"datetime" : "2019:05:15 12:23:40",
@@ -4824,7 +4824,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "295",
 				"image_src" : "IMG_7647.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,8362222220001",
 				"long" : "27,1898277780001",
 				"datetime" : "2019:05:15 12:24:17",
@@ -4841,7 +4841,7 @@ module.exports = {
 			"properties" : {
 				"objectid" : "296",
 				"image_src" : "IMG_7648.JPG",
-				"name" : "Металлолом",
+				"type":  "Металлолом",
 				"lat" : "59,83635",
 				"long" : "27,1908083330001",
 				"datetime" : "2019:05:15 12:25:36",
