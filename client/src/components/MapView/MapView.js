@@ -40,40 +40,43 @@ export default class MapView extends React.Component {
 
         return groupLayers.map((item, key) => {
             return item.layers.map((item, key) => {
-                if (item.featureType === "GeoJSON") {
-                    return (
-                        <Pane>
-                            <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
-                                     onEachFeature={(feature, layer) => {
-                                         layer.bindPopup(feature.properties.name
-                                         )
-                                     }}
+                    if (item.featureType === "GeoJSON") {
+                        return (
+                            <Pane>
+                                <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
+                                         onEachFeature={(feature, layer) => {layer.bindPopup
+                                         (`<h5>${feature.properties.name}</h5> 
+                                            <p>${feature.properties.note}</p>`)
+                                         }}
 
                                          pointToLayer={(feature, latlng) => {
-                                         let iconUrl = item.iconUrl
+                                             let iconUrl = item.iconUrl
 
-                                         if (item.icons) {
-                                         item.icons.forEach((elem) => {
-                                         if (elem.type === feature.properties.type) {
-                                         iconUrl = elem.iconUrl
-                                     }
-                                     })
-                                     }
+                                             if (item.icons) {
+                                                 item.icons.forEach((elem) => {
+                                                     if (elem.type === feature.properties.type) {
+                                                         iconUrl = elem.iconUrl
+                                                     }
+                                                 })
+                                             }
 
-                                         let iconSize = [32, 38]
-                                         if (item.iconSize) {
-                                         iconSize = item.iconSize
-                                     }
+                                             let iconSize = [32, 38]
+                                             if (item.iconSize) {
+                                                 iconSize = item.iconSize
+                                             }
 
-                                         return L.marker(latlng, {
-                                         icon: new L.Icon({
-                                         iconUrl: iconUrl,
-                                         iconSize: iconSize,
-                                         iconAnchor: [16, 27]
-                                     })
-                                     })
-                                     }}>
-                                     {/*<Popup >
+                                             return L.marker(latlng, {
+                                                 icon: new L.Icon({
+                                                     iconUrl: iconUrl,
+                                                     iconSize: iconSize,
+                                                     iconAnchor: [16, 27]
+                                                 })
+                                             })
+                                         }}
+
+
+                                >
+                                    {/*<Popup >
                                         feature.properties.name
                                         <table>
                                             <th>{feature.label}</th>
@@ -88,23 +91,23 @@ export default class MapView extends React.Component {
                                             </tr>
                                         </table>
                                     </Popup>*/}
-                                         </GeoJSON>
+                                </GeoJSON>
 
-                                         </Pane>
-                                         )
-                                         } else if (item.featureType === "raster") {
-                                         return (
-                                         <Pane>
-                                         <ImageOverlay key={item.layerKey} url={item.feature} bounds={item.bounds}/>
-                                         </Pane>
-                                         )
-                                         } else {
-                                         return ""
-                                         }
-                                         }
-                                         )
-                                         })
-                                         }
+                            </Pane>
+                        )
+                    } else if (item.featureType === "raster") {
+                        return (
+                            <Pane>
+                                <ImageOverlay key={item.layerKey} url={item.feature} bounds={item.bounds}/>
+                            </Pane>
+                        )
+                    } else {
+                        return ""
+                    }
+                }
+            )
+        })
+    }
 
 
-                                         }
+}
