@@ -1,4 +1,6 @@
 module.exports = {
+	groupLabel: null,
+	isOnMap: true,
 	"type" : "FeatureCollection",
 	"name" : "Photolayer",
 	"features" : [
