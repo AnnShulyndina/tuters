@@ -388,7 +388,8 @@ let groupLayers = [
                 iconUrl: LogoTechImpact,
                 icons: [{
                     type: 'Мусор',
-                    iconUrl: LogoTrash
+                    iconUrl: LogoTrash,
+
                 }, {
                     type: 'Металлолом',
                     iconUrl: LogoMetall
@@ -422,14 +423,23 @@ let groupLayers = [
                 label: "Места обитания птиц, животных и растений",
                 iconUrl: LogoCrow,
                 icons: [{
+                    name: 'name',
                     type: 'birds',
-                    iconUrl: LogoCrow
+                    iconUrl: LogoCrow,
+                    image_src: 'image_src',
+                    note: 'note'
                 }, {
+                    name: 'name',
                     type: 'mammal',
-                    iconUrl: LogoDachs
+                    iconUrl: LogoDachs,
+                    image_src: 'image_src',
+                    note: 'note'
                 }, {
+                    name: 'name',
                     type: 'plants',
-                    iconUrl: LogoFlower
+                    iconUrl: LogoFlower,
+                    image_src: 'image_src',
+                    note: 'note'
                 }],
                 feature: birds,
                 featureType: "GeoJSON"

@@ -12,7 +12,9 @@ export default class MapView extends React.Component {
 
     render() {
         let {groupLayers} = this.props;
-        if (!groupLayers || groupLayers.length ===0) { return ""}
+        if (!groupLayers || groupLayers.length === 0) {
+            return ""
+        }
 
         groupLayers = groupLayers.filter(item => item.isOnMap);
 
@@ -38,57 +40,71 @@ export default class MapView extends React.Component {
 
         return groupLayers.map((item, key) => {
             return item.layers.map((item, key) => {
-                    if (item.featureType === "GeoJSON") {
-                        return (
-                            <Pane>
-                                <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
-                                         onEachFeature={(feature, layer) => {
-                                             layer.bindTooltip(item.label, feature)
-                                         }}
+                if (item.featureType === "GeoJSON") {
+                    return (
+                        <Pane>
+                            <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
+                                     onEachFeature={(feature, layer) => {
+                                         layer.bindPopup(feature.properties.name
+                                         )
+                                     }}
+
                                          pointToLayer={(feature, latlng) => {
-                                             let iconUrl = item.iconUrl
+                                         let iconUrl = item.iconUrl
 
-                                             if (item.icons) {
-                                                 item.icons.forEach((elem) => {
-                                                     if (elem.type === feature.properties.type) {
-                                                         iconUrl = elem.iconUrl
-                                                     }
-                                                 })
-                                             }
+                                         if (item.icons) {
+                                         item.icons.forEach((elem) => {
+                                         if (elem.type === feature.properties.type) {
+                                         iconUrl = elem.iconUrl
+                                     }
+                                     })
+                                     }
 
-                                             let iconSize = [32, 32]
-                                             if (item.iconSize) {
-                                                 iconSize = item.iconSize
-                                             }
+                                         let iconSize = [32, 38]
+                                         if (item.iconSize) {
+                                         iconSize = item.iconSize
+                                     }
 
-                                             return L.marker(latlng, {
-                                                 icon: new L.Icon({
-                                                     iconUrl: iconUrl,
-                                                     iconSize: iconSize,
-                                                     iconAnchor: [16, 27]
-                                                 })
-                                             })
-                                         }}>
-                                    <Popup>
-                                        A pretty CSS3 popup. <br/> Easily customizable.
-                                    </Popup>
-                                </GeoJSON>
+                                         return L.marker(latlng, {
+                                         icon: new L.Icon({
+                                         iconUrl: iconUrl,
+                                         iconSize: iconSize,
+                                         iconAnchor: [16, 27]
+                                     })
+                                     })
+                                     }}>
+                                     {/*<Popup >
+                                        feature.properties.name
+                                        <table>
+                                            <th>{feature.label}</th>
+                                            <tr>
+                                                <td>{item.name}</td>
+                                            </tr>
+                                            <tr>
+                                                <td><b>{item.note}</b></td>
+                                            </tr>
+                                            <tr>
+                                                <td>{item.image_src}</td>
+                                            </tr>
+                                        </table>
+                                    </Popup>*/}
+                                         </GeoJSON>
 
-                            </Pane>
-                        )
-                    } else if (item.featureType === "raster") {
-                        return (
-                            <Pane>
-                                <ImageOverlay key={item.layerKey} url={item.feature} bounds={item.bounds}/>
-                            </Pane>
-                        )
-                    } else {
-                        return ""
-                    }
-                }
-            )
-        })
-    }
+                                         </Pane>
+                                         )
+                                         } else if (item.featureType === "raster") {
+                                         return (
+                                         <Pane>
+                                         <ImageOverlay key={item.layerKey} url={item.feature} bounds={item.bounds}/>
+                                         </Pane>
+                                         )
+                                         } else {
+                                         return ""
+                                         }
+                                         }
+                                         )
+                                         })
+                                         }
 
 
-}
+                                         }
