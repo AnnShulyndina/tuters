@@ -52,10 +52,10 @@ export default class LegendItem extends React.Component {
                                 <span className="legend_item-title"> {groupLayer.groupLabel}</span>)
                         }
 
-                        {
-                            groupLayer.isBaseLayer &&
-                            (<span > dsfsfs</span>)
-                        }
+                        {/*{*/}
+                        {/*    groupLayer.isBaseLayer &&*/}
+                        {/*    (<span > dsfsfs</span>)*/}
+                        {/*}*/}
 
                         {
                             groupLayer.layers.length > 0 && (

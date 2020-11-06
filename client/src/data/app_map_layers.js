@@ -15,6 +15,7 @@ var lyrBaseOSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png
     maxZoom: maxZoom,
     maxNativeZoom: maxNativeZoom,
 }).addTo(map);
+
 var lyrBaseOrtophoto = L.tileLayer('tiles/tiles_main/{z}/{x}/{y}.png', {
     minZoom: minZoom,
     maxZoom: maxZoom
@@ -24,6 +25,8 @@ var lyrBaseLidar = L.tileLayer('tiles/tiles_lidar/{z}/{x}/{y}.png', {
     maxZoom: maxZoom,
     maxNativeZoom: maxNativeZoom
 });
+
+
 
 var lyrBaseSattelite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
     attribution:

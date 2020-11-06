@@ -18,6 +18,7 @@ import LogoHarbor from "../icons/icons/harbor.png";
 import LogoBoat from "../icons/icons/boat.png";
 import LogoDanger from "../icons/icons/danger.png";
 
+
 import LogoTools from "../icons/icons/level.png";
 import LogoMeteo from "../icons/icons/meteo.png";
 
@@ -32,11 +33,14 @@ import LogoDepth from "../icons/depth/depths.svg"
 import LogoIzobata from "../icons/srd/srd_izobata.png"
 import LogoSrd_points from "../icons/srd/srd_points.png"
 import LogoSRD from "../icons/srd/srd_grid.png"
+import SRDGrid from "../data/map_image/srd_grid.png"
 
 import LogoTerrOOPT from "../icons/terr/green.svg"
 import LogoTerrFinVil from "../icons/terr/blue.svg"
 import LogoTerrClean from "../icons/terr/purple.svg"
 import LogoTerrAeroPhoton from "../icons/terr/pink.svg"
+import L from 'leaflet';
+
 
 import art_poi from "./art_poi";
 import art_lighthouse from "./art_lighthouse";
@@ -52,6 +56,9 @@ import village_zone from "./village_zone";
 import cleared_area from "./cleared_area";
 import air_add from "./air_add";
 import zone from "./zone";
+
+//import '../tiles_lidar/7/73/37.atr'
+
 
 function style_zone(feature) {
     var zone_fillColor = '';
@@ -109,8 +116,26 @@ function style_zone(feature) {
     }
 }
 
-let groupLayers = [
+function getPhotos(feature) {
+    let result = feature
+    let resFeatures = []
+    resFeatures = feature.features.filter((item) => item.properties.type === "Фотографии")
+    result.features = resFeatures
+    return result
+    
+}
 
+function getPollutions(feature) {
+    let result = feature
+    let resFeatures = []
+    resFeatures = feature.features.filter(item => item.properties.type !== "Фотографии")
+    result.features = resFeatures
+    console.log("getPollutions", result)
+    return result
+}
+
+let groupLayers = [
+    
     // base layers
     {
         isBaseLayer: true,
@@ -120,40 +145,40 @@ let groupLayers = [
             layerKey: 99,
             layerURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         }]
-
+        
     },
     {
         isBaseLayer: true,
         groupLabel: "Base OSM",
         isOnMap: false,
         layers: [{
-            layerKey: 100,
+            layerKey: 96,
             layerURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         }]
     },
     {
         isBaseLayer: true,
-        groupLabel: "opentopomap",
+        groupLabel: "Ortophoto",
         isOnMap: false,
         layers: [{
-            layerKey: 102,
-            layerURL: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+            layerKey: 97,
+            layerURL: '../tiles_lidar/{z}/{x}/{y}.png',
         }]
-    },{
+    }, {
         isBaseLayer: true,
-        groupLabel: "thunderforest",
+        groupLabel: "Lidar",
         isOnMap: false,
         layers: [{
-            layerKey: 101,
-            layerURL: 'https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png',
+            layerKey: 98,
+            layerURL: './tiles_lidar/{z}/{x}/{y}.png',
         }]
-
+        
     },
-
+    
     /*territory legend*/
     {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-oopt-item",
         layers: [
             {
@@ -175,7 +200,7 @@ let groupLayers = [
         ],
     }, {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-fin-item",
         layers: [
             {
@@ -197,7 +222,7 @@ let groupLayers = [
         ],
     }, {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-cleaned-item",
         layers: [
             {
@@ -219,7 +244,7 @@ let groupLayers = [
         ],
     }, {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-air-item",
         layers: [
             {
@@ -239,11 +264,11 @@ let groupLayers = [
                 }
             }],
     },
-
+    
     //SRD
     {
         groupLabel: "Съемка рельефа дна",
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "srd-item",
         layers:
             [
@@ -264,7 +289,7 @@ let groupLayers = [
                 layerKey: 107,
                 label: "СРД",
                 iconUrl: LogoSRD,
-                feature: '',
+                feature: SRDGrid,
                 featureType: "raster",
                 bounds: [
                     [59.829035277018569, 27.2013], [59.929035277018569, 27.3013]
@@ -272,8 +297,8 @@ let groupLayers = [
             }
             ],
     },
-
-
+    
+    
     //Lighthouse
     {
         groupLabel: null,
@@ -301,7 +326,7 @@ let groupLayers = [
             }
         ],
     },
-
+    
     //Art tools
     {
         groupLabel: null,
@@ -320,8 +345,8 @@ let groupLayers = [
                     iconUrl: LogoMeteo
                 }
                 ],
-
-
+                
+                
                 feature: art_tools,
                 featureType: "GeoJSON"
             }
@@ -387,9 +412,9 @@ let groupLayers = [
                 label: "Техногенные объекты",
                 iconUrl: LogoTechImpact,
                 icons: [{
-                    type: 'Мусор',
+                    name: 'Мусор',
                     iconUrl: LogoTrash,
-
+                    
                 }, {
                     type: 'Металлолом',
                     iconUrl: LogoMetall
@@ -415,7 +440,7 @@ let groupLayers = [
     //Birds
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "icons-birds-item",
         layers: [
             {
@@ -446,11 +471,11 @@ let groupLayers = [
             }
         ],
     },
-
+    
     // //landscape
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "land-photo-item",
         layers: [
             {
@@ -461,17 +486,17 @@ let groupLayers = [
                     iconSize: [320, 320],
                     iconAnchor: [16, 27]
                 },
-
+                
                 iconUrl: LogoPhoto,
                 iconSize: [32, 32],
-                feature: '',
+                feature: art_pollution,
                 featureType: "GeoJSON"
             }
         ],
     },
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "land-road-item",
         layers: [
             {
@@ -519,7 +544,7 @@ let groupLayers = [
                 iconUrl: LogoDepth,
                 feature: mag_margins,
                 featureType: "GeoJSON"
-
+                
             }
         ],
     }
