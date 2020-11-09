@@ -4,6 +4,7 @@ import "react-leaflet-markercluster/dist/styles.min.css";
 import "./MapView.css"
 import L from 'leaflet';
 
+
 export default class MapView extends React.Component {
     
     leafletMap = null;
@@ -22,7 +23,7 @@ export default class MapView extends React.Component {
         
         return (
             <div className="map-view">
-                <Map ref={this.setLeafletMapRef} center={[59.85, 27.2]} zoom={15} maxZoom={21} minZoom={8}
+                <Map ref={this.setLeafletMapRef} center={[59.85, 27.2]} zoom={13} maxZoom={21} minZoom={8}
                      attributionControl={true} zoomControl={true}
                      doubleClickZoom={true} scrollWheelZoom={true}
                      dragging={true} animate={true} easeLinearity={0.35}>
@@ -42,44 +43,41 @@ export default class MapView extends React.Component {
             return item.layers.map((item, key) => {
                     if (item.featureType === "GeoJSON") {
                         return (
-                            <Pane>
+                            <Pane  style={item.mapStyle}>
                                 <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
                                          onEachFeature={(feature, layer) => {
-                                             
+                                    
                                              let folderName = 'artificial'
-                                             
-                        
-                                             
+                                    
                                              if (feature.properties.type === 'birds') {
                                                  folderName = 'biology'
                                              } else if (feature.properties.type === 'mammal') {
                                                  folderName = 'biology'
                                              } else if (feature.properties.type === 'plants') {
                                                  folderName = 'biology'
-                                                 //?
-                                             } else if (feature.properties.name === 'lighthouse') {
+                                             } else if (feature.properties.image_src === 'lighthouse_min.gif') {
                                                  folderName = 'gif'
-                                             } else if (feature.properties.name === 'lighthouse') {
-                                                 folderName = 'artificial'
                                              }
-    
-                                             let imagePop = `<img class=\'image-popup\' alt="images path" src="./media/${folderName}/${feature.properties.image_src}" />`
-                                             let namePop =  `<h3>${feature.properties.name}</h3>`
-                                             let textPop = `<p class="text-popup">${feature.properties.note}</p>`
-                                             
-    
-                                             if ( feature.properties.image_src === null || feature.properties.image_src === undefined ) {
+                                    
+                                             let imagePop = `<img class="image-popup" alt="images path" src="./media/${folderName}/${feature.properties.image_src}" />`
+                                             let namePop = `<h3>${feature.properties.name}</h3>`
+                                             let note = `<p class="text-popup">${feature.properties.note}</p>`
+                                    
+                                    
+                                             if (feature.properties.image_src === null || feature.properties.image_src === undefined) {
                                                  imagePop = ""
                                              }
+                                             if (feature.properties.note === null || feature.properties.note === undefined) {
+                                                 note = ""
+                                             }
                                     
-                                             let popupContent = `${namePop} ${imagePop} ${textPop}`
-                                             
                                     
-                                             if ( feature.properties.name !== undefined) {
-                                                 layer.bindPopup(popupContent) }
-                                             
-                                             
-                                             
+                                             let popupContent = `${namePop} ${imagePop} ${note}`
+                                             layer.bindPopup(popupContent)
+                                    
+                                             // if ( feature.properties.name !== undefined) {
+                                             //     layer.bindPopup(popupContent)
+                                             // }
                                          }}
                                 
                                          pointToLayer={(feature, latlng) => {

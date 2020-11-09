@@ -3,11 +3,11 @@ module.exports = {
   "crs" : {
     "type" : "name",
     "properties" : {
-      "name" : "EPSG:4326"
+      "name":"Очищенная территория",
     }
   },
   "features" : [
-    {
+    { "name":"Очищенная территория",
       "type" : "Feature",
       "id" : 0,
       "geometry" : {
@@ -2316,6 +2316,7 @@ module.exports = {
         ]
       },
       "properties" : {
+        "name":"Очищенная территория",
         "FID" : 0,
         "FID_Export" : 0,
         "OID_" : 0,
@@ -2629,6 +2630,7 @@ module.exports = {
         ]
       },
       "properties" : {
+        "name":"Очищенная территория",
         "FID" : 1,
         "FID_Export" : 1,
         "OID_" : 0,

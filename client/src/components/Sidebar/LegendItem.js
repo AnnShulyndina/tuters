@@ -52,11 +52,6 @@ export default class LegendItem extends React.Component {
                                 <span className="legend_item-title"> {groupLayer.groupLabel}</span>)
                         }
 
-                        {/*{*/}
-                        {/*    groupLayer.isBaseLayer &&*/}
-                        {/*    (<span > dsfsfs</span>)*/}
-                        {/*}*/}
-
                         {
                             groupLayer.layers.length > 0 && (
                                 groupLayer.layers.map((item, key) => (
