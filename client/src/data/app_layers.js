@@ -38,9 +38,8 @@ import SRDGrid from "../data/map_image/srd_grid.png"
 import LogoTerrOOPT from "../icons/terr/green.svg"
 import LogoTerrFinVil from "../icons/terr/blue.svg"
 import LogoTerrClean from "../icons/terr/purple.svg"
-import LogoTerrAeroPhoton from "../icons/terr/pink.svg"
-import L from 'leaflet';
 
+import LogoTerrAeroPhoto from "../icons/terr/pink.svg"
 
 import art_poi from "./art_poi";
 import art_lighthouse from "./art_lighthouse";
@@ -56,12 +55,11 @@ import village_zone from "./village_zone";
 import cleared_area from "./cleared_area";
 import air_add from "./air_add";
 import zone from "./zone";
-
-//import '../tiles_lidar/7/73/37.atr'
+import photo_views from "./photo_views"
 
 
 function style_zone(feature) {
-    var zone_fillColor = '';
+    let zone_fillColor = '';
     switch (String(feature.properties['name'])) {
         case 'Болото': {
             zone_fillColor = 'rgb(33,183,191)';
@@ -115,25 +113,6 @@ function style_zone(feature) {
         weight: 0,
     }
 }
-
-function getPhotos(feature) {
-    let result = feature
-    let resFeatures = []
-    resFeatures = feature.features.filter((item) => item.properties.type === "Фотографии")
-    result.features = resFeatures
-    return result
-    
-}
-
-function getPollutions(feature) {
-    let result = feature
-    let resFeatures = []
-    resFeatures = feature.features.filter(item => item.properties.type !== "Фотографии")
-    result.features = resFeatures
-    console.log("getPollutions", result)
-    return result
-}
-
 let groupLayers = [
     
     // base layers
@@ -145,7 +124,6 @@ let groupLayers = [
             layerKey: 99,
             layerURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         }]
-        
     },
     {
         isBaseLayer: true,
@@ -172,13 +150,12 @@ let groupLayers = [
             layerKey: 98,
             layerURL: './tiles_lidar/{z}/{x}/{y}.png',
         }]
-        
     },
     
     /*territory legend*/
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "terr-oopt-item",
         layers: [
             {
@@ -195,6 +172,8 @@ let groupLayers = [
                     fill: true,
                     strokeWidth: 4,
                     weight: 3.0,
+                    position: "relative",
+                    zIndex: 10
                 }
             },
         ],
@@ -250,7 +229,7 @@ let groupLayers = [
             {
                 layerKey: 104,
                 label: "Территория детальной аэрофотосъемки",
-                iconUrl: LogoTerrAeroPhoton,
+                iconUrl: LogoTerrAeroPhoto,
                 feature: air_add,
                 featureType: "GeoJSON",
                 style: {
@@ -268,7 +247,7 @@ let groupLayers = [
     //SRD
     {
         groupLabel: "Съемка рельефа дна",
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "srd-item",
         layers:
             [
@@ -277,7 +256,14 @@ let groupLayers = [
                     label: "Изобата (10 м)",
                     iconUrl: LogoIzobata,
                     feature: srd_izobata_10,
-                    featureType: "GeoJSON"
+                    featureType: "GeoJSON",
+                    controlClassName: "isobath",
+                    mapStyle: {
+                        zIndex: 800
+                    }
+                    
+                    
+                   
                 }, {
                 layerKey: 106,
                 label: "Объекты на дне",
@@ -285,19 +271,22 @@ let groupLayers = [
                 feature: srd_points,
                 featureType: "GeoJSON",
                 iconSize: [12, 12],
+                
             }, {
                 layerKey: 107,
                 label: "СРД",
                 iconUrl: LogoSRD,
                 feature: SRDGrid,
                 featureType: "raster",
+                pane: 100,
                 bounds: [
-                    [59.829035277018569, 27.2013], [59.929035277018569, 27.3013]
+                    [59.80817075972259, 27.200838835537546],
+                    [59.87080200573563, 27.257898839237672]
                 ],
+             
             }
             ],
     },
-    
     
     //Lighthouse
     {
@@ -345,13 +334,12 @@ let groupLayers = [
                     iconUrl: LogoMeteo
                 }
                 ],
-                
-                
                 feature: art_tools,
                 featureType: "GeoJSON"
             }
         ],
     },
+    
     //Special Objects
     {
         groupLabel: null,
@@ -401,6 +389,7 @@ let groupLayers = [
             }
         ],
     },
+    
     //Tech Objects
     {
         groupLabel: null,
@@ -437,6 +426,7 @@ let groupLayers = [
             }
         ],
     },
+    
     //Birds
     {
         groupLabel: null,
@@ -488,8 +478,8 @@ let groupLayers = [
                 },
                 
                 iconUrl: LogoPhoto,
-                iconSize: [32, 32],
-                feature: art_pollution,
+                iconSize: [33, 38],
+                feature: photo_views,
                 featureType: "GeoJSON"
             }
         ],
@@ -532,6 +522,7 @@ let groupLayers = [
             }
         ],
     },
+    
     //MagField
     {
         groupLabel: "Исследования магнитного поля",
@@ -548,7 +539,6 @@ let groupLayers = [
             }
         ],
     }
-
-
+    
 ]
 export default groupLayers

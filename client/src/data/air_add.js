@@ -6,6 +6,7 @@ module.exports = {
         {
             "type": "Feature",
             "properties": {
+                "name":"Территория детальной аэрофотосъемки",
                 "note": null,
                 "OBJECTID": "1",
                 "SHAPE_Leng": 3135.5953750499998,
@@ -19,6 +20,7 @@ module.exports = {
         {
             "type": "Feature",
             "properties": {
+                "name":"Территория детальной аэрофотосъемки",
                 "note": null,
                 "OBJECTID": "3",
                 "SHAPE_Leng": 1104.3529817599999,
@@ -32,6 +34,7 @@ module.exports = {
         {
             "type": "Feature",
             "properties": {
+                "name":"Территория детальной аэрофотосъемки",
                 "note": null,
                 "OBJECTID": "4",
                 "SHAPE_Leng": 12392.260016800001,
