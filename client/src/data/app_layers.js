@@ -36,11 +36,10 @@ import LogoSrd_points from "../icons/srd/srd_points.png"
 import LogoSRD from "../icons/srd/srd_grid.png"
 import SRDGrid from "../data/map_image/srd_grid.png"
 
-import LogoTerrOOPT from "../icons/terr/green.svg"
-import LogoTerrFinVil from "../icons/terr/blue.svg"
-import LogoTerrClean from "../icons/terr/purple.svg"
-
-import LogoTerrAeroPhoto from "../icons/terr/pink.svg"
+import LogoTerrOOPT from "../icons/terr/green.png"
+import LogoTerrFinVil from "../icons/terr/blue.png"
+import LogoTerrClean from "../icons/terr/purple.png"
+import LogoTerrAeroPhoto from "../icons/terr/pink.png"
 
 import art_poi from "./art_poi";
 import art_lighthouse from "./art_lighthouse";
@@ -118,7 +117,6 @@ function style_zone(feature) {
 let groupLayers = [
     
     // base layers
-    
     {
         isBaseLayer: true,
         groupLabel: "Base OSM",
@@ -153,137 +151,6 @@ let groupLayers = [
             layerKey: 98,
             layerURL: './tiles_lidar/{z}/{x}/{y}.png',
         }]
-    },
-    
-    /*territory legend*/
-    {
-        groupLabel: null,
-        isOnMap: false,
-        controlClassName: "terr-oopt-item",
-        layers: [
-            {
-                layerKey: 101,
-                label: "Территория ООПТ",
-                iconUrl: LogoTerrOOPT,
-                feature: oopt_zone,
-                featureType: "GeoJSON",
-                style: {
-                    color: 'rgb(143,188,143)',
-                    lineCap: 'square',
-                    lineJoin: 'bevel',
-                    fillColor: 'rgb(50,200,50)',
-                    fill: true,
-                    strokeWidth: 4,
-                    weight: 3.0,
-                    position: "relative",
-                    zIndex: 10
-                }
-            },
-        ],
-    }, {
-        groupLabel: null,
-        isOnMap: false,
-        controlClassName: "terr-fin-item",
-        layers: [
-            {
-                layerKey: 102,
-                label: "Территория финской деревни",
-                iconUrl: LogoTerrFinVil,
-                feature: village_zone,
-                featureType: "GeoJSON",
-                style: {
-                    color: 'rgb(0,0,205)',
-                    lineCap: 'square',
-                    lineJoin: 'bevel',
-                    fillColor: 'rgb(00,191,255)',
-                    fill: true,
-                    strokeWidth: 4,
-                    weight: 3.0,
-                }
-            },
-        ],
-    }, {
-        groupLabel: null,
-        isOnMap: false,
-        controlClassName: "terr-cleaned-item",
-        layers: [
-            {
-                layerKey: 103,
-                label: "Очищенная территория",
-                iconUrl: LogoTerrClean,
-                feature: cleared_area,
-                featureType: "GeoJSON",
-                style: {
-                    color: 'rgb(160,32,240)',
-                    lineCap: 'square',
-                    lineJoin: 'bevel',
-                    fillColor: 'rgb(148,0,211)',
-                    fill: true,
-                    strokeWidth: 4,
-                    weight: 3.0,
-                }
-            }
-        ],
-    }, {
-        groupLabel: null,
-        isOnMap: false,
-        controlClassName: "terr-air-item",
-        layers: [
-            {
-                layerKey: 104,
-                label: "Территория детальной аэрофотосъемки",
-                iconUrl: LogoTerrAeroPhoto,
-                feature: air_add,
-                featureType: "GeoJSON",
-                style: {
-                    color: 'rgb(233,158,158)',
-                    lineCap: 'square',
-                    lineJoin: 'bevel',
-                    fillColor: 'rgb(233,200,200)',
-                    fill: true,
-                    strokeWidth: 4,
-                    weight: 3.0,
-                }
-            }],
-    },
-    
-    //SRD
-    {
-        groupLabel: "Съемка рельефа дна",
-        isOnMap: false,
-        controlClassName: "srd-item",
-        layers:
-            [
-                {
-                    layerKey: 105,
-                    label: "Изобата (10 м)",
-                    iconUrl: LogoIzobata,
-                    feature: srd_izobata_10,
-                    featureType: "GeoJSON",
-                    controlClassName: "isobath",
-                    mapStyle: {
-                        zIndex: 500
-                    }
-                }, {
-                layerKey: 106,
-                label: "Объекты на дне",
-                iconUrl: LogoSrd_points,
-                feature: srd_points,
-                featureType: "GeoJSON",
-                iconSize: [12, 12],
-            }, {
-                layerKey: 107,
-                label: "СРД",
-                iconUrl: LogoSRD,
-                feature: SRDGrid,
-                featureType: "raster",
-                pane: 100,
-                bounds: [
-                    [59.80817075972259, 27.200838835537546],
-                    [59.87080200573563, 27.257898839237672]
-                ],
-            }
-            ],
     },
     
     //Lighthouse
@@ -326,10 +193,12 @@ let groupLayers = [
                 label: "Инструменты исследования окружающей среды",
                 iconUrl: LogoTools,
                 icons: [{
-                    type: 'Радарный датчик', name: 'Радарный датчик',
+                    type: 'Радарный датчик',
+                    name: 'Радарный датчик',
                     iconUrl: LogoTools
                 }, {
-                    type: "Автоматическая метеостанция (АМС)", name: "Автоматическая метеостанция (АМС)",
+                    type: "Автоматическая метеостанция (АМС)",
+                    name: "Автоматическая метеостанция (АМС)",
                     iconUrl: LogoMeteo
                 }
                 ],
@@ -461,7 +330,8 @@ let groupLayers = [
         ],
     },
     
-    // //landscape
+    //landscape photo_views
+
     {
         groupLabel: null,
         isOnMap: false,
@@ -480,6 +350,117 @@ let groupLayers = [
                 iconSize: [33, 38],
                 feature: photo_views,
                 featureType: "GeoJSON"
+            }
+        ],
+    },
+
+    
+    /*territory legend*/
+    {
+        groupLabel: null,
+        isOnMap: false,
+        controlClassName: "terr-oopt-item",
+        layers: [
+            {
+                layerKey: 101,
+                label: "Территория ООПТ",
+                iconUrl: LogoTerrOOPT,
+                feature: oopt_zone,
+                featureType: "GeoJSON",
+                style: {
+                    color: 'rgb(143,188,143)',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    fillColor: 'rgb(50,200,50)',
+                    fill: true,
+                    strokeWidth: 4,
+                    weight: 3.0,
+                    position: "relative",
+                    zIndex: 10
+                }
+            },
+        ],
+    }, {
+        groupLabel: null,
+        isOnMap: false,
+        controlClassName: "terr-fin-item",
+        layers: [
+            {
+                layerKey: 102,
+                label: "Территория финской деревни",
+                iconUrl: LogoTerrFinVil,
+                feature: village_zone,
+                featureType: "GeoJSON",
+                style: {
+                    color: 'rgb(0,0,205)',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    fillColor: 'rgb(00,191,255)',
+                    fill: true,
+                    strokeWidth: 4,
+                    weight: 3.0,
+                }
+            },
+        ],
+    }, {
+        groupLabel: null,
+        isOnMap: false,
+        controlClassName: "terr-cleaned-item",
+        layers: [
+            {
+                layerKey: 103,
+                label: "Очищенная территория",
+                iconUrl: LogoTerrClean,
+                feature: cleared_area,
+                featureType: "GeoJSON",
+                style: {
+                    color: 'rgb(160,32,240)',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    fillColor: 'rgb(148,0,211)',
+                    fill: true,
+                    strokeWidth: 4,
+                    weight: 3.0,
+                }
+            }
+        ],
+    }, {
+        groupLabel: null,
+        isOnMap: false,
+        controlClassName: "terr-air-item",
+        layers: [
+            {
+                layerKey: 104,
+                label: "Территория детальной аэрофотосъемки",
+                iconUrl: LogoTerrAeroPhoto,
+                feature: air_add,
+                featureType: "GeoJSON",
+                style: {
+                    color: 'rgb(233,158,158)',
+                    lineCap: 'square',
+                    lineJoin: 'bevel',
+                    fillColor: 'rgb(233,200,200)',
+                    fill: true,
+                    strokeWidth: 4,
+                    weight: 3.0,
+                }
+            }],
+    },
+    
+    // //landscape
+    
+    {
+        groupLabel: null,
+        isOnMap: false,
+        controlClassName: "land-landscape-item",
+        layers: [
+            {
+                layerKey: 115,
+                label: "Ландшафты",
+                iconUrl: LogoLandscape,
+                feature: zone,
+                featureType: "GeoJSON",
+                style: style_zone
             }
         ],
     },
@@ -506,20 +487,44 @@ let groupLayers = [
             }
         ],
     },
+   
+    //SRD
     {
-        groupLabel: null,
+        groupLabel: "Съемка рельефа дна",
         isOnMap: false,
-        controlClassName: "land-landscape-item",
-        layers: [
-            {
-                layerKey: 115,
-                label: "Ландшафты",
-                iconUrl: LogoLandscape,
-                feature: zone,
+        controlClassName: "srd-item",
+        layers:
+            [
+                {
+                    layerKey: 105,
+                    label: "Изобата (10 м)",
+                    iconUrl: LogoIzobata,
+                    feature: srd_izobata_10,
+                    featureType: "GeoJSON",
+                    controlClassName: "isobath",
+                    mapStyle: {
+                        zIndex: 500
+                    }
+                }, {
+                layerKey: 106,
+                label: "Объекты на дне",
+                iconUrl: LogoSrd_points,
+                feature: srd_points,
                 featureType: "GeoJSON",
-                style: style_zone
+                iconSize: [12, 12],
+            }, {
+                layerKey: 107,
+                label: "СРД",
+                iconUrl: LogoSRD,
+                feature: SRDGrid,
+                featureType: "raster",
+                pane: 100,
+                bounds: [
+                    [59.80817075972259, 27.200838835537546],
+                    [59.87080200573563, 27.257898839237672]
+                ],
             }
-        ],
+            ],
     },
     
     //MagField

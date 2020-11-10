@@ -14,11 +14,14 @@
     padding: 0;
 }
 
-.icons-lighthouse-item, .land-photo-item {
+.icons-lighthouse-item {
     margin-top: 20px;
 }
-.terr-oopt-item {
-
+.land-photo-item{
+    margin-bottom: 20px;
+}
+.terr-oopt-item, .terr-fin-item, .terr-cleaned-item, .terr-air-item, .land-landscape-item {
+    padding-left: 3px;
 }
 .depths-item {
     margin-top: 20px;
