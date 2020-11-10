@@ -18,6 +18,7 @@ import LogoHarbor from "../icons/icons/harbor.png";
 import LogoBoat from "../icons/icons/boat.png";
 import LogoDanger from "../icons/icons/danger.png";
 
+
 import LogoTools from "../icons/icons/level.png";
 import LogoMeteo from "../icons/icons/meteo.png";
 
@@ -32,11 +33,13 @@ import LogoDepth from "../icons/depth/depths.svg"
 import LogoIzobata from "../icons/srd/srd_izobata.png"
 import LogoSrd_points from "../icons/srd/srd_points.png"
 import LogoSRD from "../icons/srd/srd_grid.png"
+import SRDGrid from "../data/map_image/srd_grid.png"
 
 import LogoTerrOOPT from "../icons/terr/green.svg"
 import LogoTerrFinVil from "../icons/terr/blue.svg"
 import LogoTerrClean from "../icons/terr/purple.svg"
-import LogoTerrAeroPhoton from "../icons/terr/pink.svg"
+
+import LogoTerrAeroPhoto from "../icons/terr/pink.svg"
 
 import art_poi from "./art_poi";
 import art_lighthouse from "./art_lighthouse";
@@ -52,9 +55,11 @@ import village_zone from "./village_zone";
 import cleared_area from "./cleared_area";
 import air_add from "./air_add";
 import zone from "./zone";
+import photo_views from "./photo_views"
+
 
 function style_zone(feature) {
-    var zone_fillColor = '';
+    let zone_fillColor = '';
     switch (String(feature.properties['name'])) {
         case 'Болото': {
             zone_fillColor = 'rgb(33,183,191)';
@@ -108,9 +113,8 @@ function style_zone(feature) {
         weight: 0,
     }
 }
-
 let groupLayers = [
-
+    
     // base layers
     {
         isBaseLayer: true,
@@ -120,36 +124,34 @@ let groupLayers = [
             layerKey: 99,
             layerURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         }]
-
     },
     {
         isBaseLayer: true,
         groupLabel: "Base OSM",
         isOnMap: false,
         layers: [{
-            layerKey: 100,
+            layerKey: 96,
             layerURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         }]
     },
     {
         isBaseLayer: true,
-        groupLabel: "opentopomap",
+        groupLabel: "Ortophoto",
         isOnMap: false,
         layers: [{
-            layerKey: 102,
-            layerURL: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+            layerKey: 97,
+            layerURL: '../tiles_lidar/{z}/{x}/{y}.png',
         }]
-    },{
+    }, {
         isBaseLayer: true,
-        groupLabel: "thunderforest",
+        groupLabel: "Lidar",
         isOnMap: false,
         layers: [{
-            layerKey: 101,
-            layerURL: 'https://{s}.tile.thunderforest.com/spinal-map/{z}/{x}/{y}.png',
+            layerKey: 98,
+            layerURL: './tiles_lidar/{z}/{x}/{y}.png',
         }]
-
     },
-
+    
     /*territory legend*/
     {
         groupLabel: null,
@@ -170,12 +172,14 @@ let groupLayers = [
                     fill: true,
                     strokeWidth: 4,
                     weight: 3.0,
+                    position: "relative",
+                    zIndex: 10
                 }
             },
         ],
     }, {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-fin-item",
         layers: [
             {
@@ -197,7 +201,7 @@ let groupLayers = [
         ],
     }, {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-cleaned-item",
         layers: [
             {
@@ -219,13 +223,13 @@ let groupLayers = [
         ],
     }, {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-air-item",
         layers: [
             {
                 layerKey: 104,
                 label: "Территория детальной аэрофотосъемки",
-                iconUrl: LogoTerrAeroPhoton,
+                iconUrl: LogoTerrAeroPhoto,
                 feature: air_add,
                 featureType: "GeoJSON",
                 style: {
@@ -239,7 +243,7 @@ let groupLayers = [
                 }
             }],
     },
-
+    
     //SRD
     {
         groupLabel: "Съемка рельефа дна",
@@ -252,7 +256,14 @@ let groupLayers = [
                     label: "Изобата (10 м)",
                     iconUrl: LogoIzobata,
                     feature: srd_izobata_10,
-                    featureType: "GeoJSON"
+                    featureType: "GeoJSON",
+                    controlClassName: "isobath",
+                    mapStyle: {
+                        zIndex: 800
+                    }
+                    
+                    
+                   
                 }, {
                 layerKey: 106,
                 label: "Объекты на дне",
@@ -260,20 +271,23 @@ let groupLayers = [
                 feature: srd_points,
                 featureType: "GeoJSON",
                 iconSize: [12, 12],
+                
             }, {
                 layerKey: 107,
                 label: "СРД",
                 iconUrl: LogoSRD,
-                feature: '',
+                feature: SRDGrid,
                 featureType: "raster",
+                pane: 100,
                 bounds: [
-                    [59.829035277018569, 27.2013], [59.929035277018569, 27.3013]
+                    [59.80817075972259, 27.200838835537546],
+                    [59.87080200573563, 27.257898839237672]
                 ],
+             
             }
             ],
     },
-
-
+    
     //Lighthouse
     {
         groupLabel: null,
@@ -301,7 +315,7 @@ let groupLayers = [
             }
         ],
     },
-
+    
     //Art tools
     {
         groupLabel: null,
@@ -320,13 +334,12 @@ let groupLayers = [
                     iconUrl: LogoMeteo
                 }
                 ],
-
-
                 feature: art_tools,
                 featureType: "GeoJSON"
             }
         ],
     },
+    
     //Special Objects
     {
         groupLabel: null,
@@ -376,6 +389,7 @@ let groupLayers = [
             }
         ],
     },
+    
     //Tech Objects
     {
         groupLabel: null,
@@ -387,8 +401,9 @@ let groupLayers = [
                 label: "Техногенные объекты",
                 iconUrl: LogoTechImpact,
                 icons: [{
-                    type: 'Мусор',
-                    iconUrl: LogoTrash
+                    name: 'Мусор',
+                    iconUrl: LogoTrash,
+                    
                 }, {
                     type: 'Металлолом',
                     iconUrl: LogoMetall
@@ -411,10 +426,11 @@ let groupLayers = [
             }
         ],
     },
+    
     //Birds
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "icons-birds-item",
         layers: [
             {
@@ -422,175 +438,34 @@ let groupLayers = [
                 label: "Места обитания птиц, животных и растений",
                 iconUrl: LogoCrow,
                 icons: [{
-                    type: 'Зарянка - Erithacus rubecula ',
-                    iconUrl: LogoCrow
+                    name: 'name',
+                    type: 'birds',
+                    iconUrl: LogoCrow,
+                    image_src: 'image_src',
+                    note: 'note'
                 }, {
-                    type: 'Зяблик - Fringilla coelebs',
-                    iconUrl: LogoCrow
+                    name: 'name',
+                    type: 'mammal',
+                    iconUrl: LogoDachs,
+                    image_src: 'image_src',
+                    note: 'note'
                 }, {
-                    type: 'Пеночка-теньковка - Phylloscopus collybita',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Белая трясогузка - Motacilla alba',
-                    iconUrl: LogoCrow
-                }, {
-                    type: "Речная крачка - Larus argentatus",
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Серебристая чайка - Larus argentatus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Длинноносый крохаль - Mergus serrator',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Сизая чайка - Larus canus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Белая трясогузка - Motacilla alba',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Белощекая казарка - Branta leucopsis',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Чернозобик - Calidris alpina',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Озерная чайка - Chroicocephalus ridibundus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Морская чайка - Larus marinus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Кряква - Anas platyrhynchos',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Белощекая казарка - Branta leucopsis',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Длинноносый крохаль - Mergus serrator',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Кукушка обыкновенная - Cuculus canorus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Зарянка - Erithacus rubecula',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Чечетка - Carduelis flammea',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Баклан большой - Phalacrocorax carbo',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Гоголь - Bucephala clangula',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Снегирь - Pyrrhula pyrrhula',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Серая утка - Anas streptera',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Пеночка-трещотка - Phylloscopus sibilatrix',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Черный дрозд - Turdus merula',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Длинноносый крохаль - Mergus serrator',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Речная крачка - Larus argentatus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Соловей обыкновенный - Luscinia luscinia',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Коростель - Crex crex - Luscinia luscinia',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Кряква - Anas platyrhynchos',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Соловей обыкновенный - Luscinia luscinia',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Кулик-сорока - Haematopus ostralegus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Лебедь шипун - Cygnus olor',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Галстучник - Charadrius hiaticula',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Черныш - Tringa ochropus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Озерная чайка - Chroicocephalus ridibundus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Серебристая чайка - Larus argentatus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Белощекая казарка - Branta leucopsis',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Енотовидная собака - Nyctereutes procyonoides(следы)',
-                    iconUrl: LogoDachs
-                }, {
-                    type: 'Кулик-сорока - Haematopus ostralegus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Сизая чайка - Larus canus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Серебристая чайка - Larus argentatus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Кряква - Anas platyrhynchos',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Серый гусь - Anser anser',
-                    iconUrl: LogoDachs
-                }, {
-                    type: 'Серый журавль - Grus grus',
-                    iconUrl: LogoCrow
-                }, {
-                    type: 'Брусника – Vaccinium vitis-idaea',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Ива козья – Salix caprea',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Вереск обыкновенный – Calluna vulgaris',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Можжевельник обыкновенный – Juniperus communis',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Осина обыкновенная– Populus tremula',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Рябина обыкновенная – Sorbus aucuparia',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Смородина альпийская – Ribes alpinum',
-                    iconUrl: LogoFlower
-                }, {
-                    type: 'Черника – Vaccinium myrtillis',
-                    iconUrl: LogoFlower
+                    name: 'name',
+                    type: 'plants',
+                    iconUrl: LogoFlower,
+                    image_src: 'image_src',
+                    note: 'note'
                 }],
                 feature: birds,
                 featureType: "GeoJSON"
             }
         ],
     },
-
+    
     // //landscape
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "land-photo-item",
         layers: [
             {
@@ -601,17 +476,17 @@ let groupLayers = [
                     iconSize: [320, 320],
                     iconAnchor: [16, 27]
                 },
-
+                
                 iconUrl: LogoPhoto,
-                iconSize: [32, 32],
-                feature: '',
+                iconSize: [33, 38],
+                feature: photo_views,
                 featureType: "GeoJSON"
             }
         ],
     },
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "land-road-item",
         layers: [
             {
@@ -647,6 +522,7 @@ let groupLayers = [
             }
         ],
     },
+    
     //MagField
     {
         groupLabel: "Исследования магнитного поля",
@@ -659,11 +535,10 @@ let groupLayers = [
                 iconUrl: LogoDepth,
                 feature: mag_margins,
                 featureType: "GeoJSON"
-
+                
             }
         ],
     }
-
-
+    
 ]
 export default groupLayers

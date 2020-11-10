@@ -9,9 +9,10 @@ module.exports = {
 				"coordinates" : [ 27.186747222, 59.854438889, 47.9776 ]
 			},
 			"properties" : {
+				"name" : "lighthouse",
 				"objectid" : "42",
 				"image_src" : "IMG_7327.JPG",
-				"name" : "Маяк",
+				"type" : "Маяк",
 				"lat" : "59,8544388890001",
 				"long" : "27,1867472220001",
 				"datetime" : "2019:05:15 06:20:21",
@@ -26,9 +27,10 @@ module.exports = {
 				"coordinates" : [ 27.18661315, 59.854320406, 67.2336 ]
 			},
 			"properties" : {
+				"name" : "lighthouse",
 				"objectid" : "49",
 				"image_src" : "IMG_7334.JPG",
-				"name" : "Вид с маяка",
+				"type" : "Вид с маяка",
 				"lat" : "59,8543204060001",
 				"long" : "27,18661315",
 				"datetime" : "2019:05:15 06:34:03",
@@ -43,9 +45,10 @@ module.exports = {
 				"coordinates" : [ 27.186671943, 59.854318871, 67.2336 ]
 			},
 			"properties" : {
+				"name" : "lighthouse",
 				"objectid" : "299",
 				"image_src" : "lighthouse_min.gif",
-				"name" : "Маяк (модель)",
+				"type" : "Маяк (модель)",
 				"lat" : "59,854318871",
 				"long" : "27,1866719430001",
 				"datetime" : "2019:05:15 06:34:03",

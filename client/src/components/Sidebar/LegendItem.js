@@ -53,11 +53,6 @@ export default class LegendItem extends React.Component {
                         }
 
                         {
-                            groupLayer.isBaseLayer &&
-                            (<span > dsfsfs</span>)
-                        }
-
-                        {
                             groupLayer.layers.length > 0 && (
                                 groupLayer.layers.map((item, key) => (
                                     <div className='legend_layers_item' key={key}>

@@ -22,4 +22,6 @@ yarn-error.log*
 
 .idea
 
-tile
+tiles_lidar
+
+media

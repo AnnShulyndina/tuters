@@ -8,7 +8,38 @@
 }
 
 .leaflet-container {
-
     height: 100%;
     width: 100%;
 }
+img.image-popup {
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    size: A5;
+}
+
+
+
+p.text-popup {
+
+    display: flex;
+    vertical-align: inherit;
+    text-align: inherit;
+    margin: 0;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.leaflet-popup-content-wrapper {
+    max-width: 650px;
+    max-height: 1000px;
+
+}
+
+.isobath {
+ color: black;
+}
+
+

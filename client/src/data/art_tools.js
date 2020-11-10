@@ -11,7 +11,7 @@ module.exports= {
 			"properties" : {
 				"objectid" : "297",
 				"image_src" : "Level.jpg",
-				"name" : "Радарный датчик",
+				"type" : "Радарный датчик",
 				"lat" : "59,8355500000001",
 				"long" : "27,19165",
 				"datetime" : null,
@@ -28,7 +28,7 @@ module.exports= {
 			"properties" : {
 				"objectid" : "298",
 				"image_src" : "Meteo.jpg",
-				"name" : "Автоматическая метеостанция (АМС)",
+				"type" : "Автоматическая метеостанция (АМС)",
 				"lat" : "59,8358500000001",
 				"long" : "27,1922500000001",
 				"datetime" : null,
