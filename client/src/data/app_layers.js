@@ -114,18 +114,11 @@ function style_zone(feature) {
         weight: 0,
     }
 }
+
 let groupLayers = [
     
     // base layers
-    {
-        isBaseLayer: true,
-        groupLabel: "Base Satellite",
-        isOnMap: true,
-        layers: [{
-            layerKey: 99,
-            layerURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-        }]
-    },
+    
     {
         isBaseLayer: true,
         groupLabel: "Base OSM",
@@ -133,6 +126,15 @@ let groupLayers = [
         layers: [{
             layerKey: 96,
             layerURL: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        }]
+    },
+    {
+        isBaseLayer: true,
+        groupLabel: "Base Satellite",
+        isOnMap: true,
+        layers: [{
+            layerKey: 99,
+            layerURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
         }]
     },
     {
@@ -156,7 +158,7 @@ let groupLayers = [
     /*territory legend*/
     {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "terr-oopt-item",
         layers: [
             {
@@ -248,7 +250,7 @@ let groupLayers = [
     //SRD
     {
         groupLabel: "Съемка рельефа дна",
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "srd-item",
         layers:
             [
@@ -262,9 +264,6 @@ let groupLayers = [
                     mapStyle: {
                         zIndex: 500
                     }
-                    
-                    
-                   
                 }, {
                 layerKey: 106,
                 label: "Объекты на дне",
@@ -272,7 +271,6 @@ let groupLayers = [
                 feature: srd_points,
                 featureType: "GeoJSON",
                 iconSize: [12, 12],
-                
             }, {
                 layerKey: 107,
                 label: "СРД",
@@ -284,7 +282,6 @@ let groupLayers = [
                     [59.80817075972259, 27.200838835537546],
                     [59.87080200573563, 27.257898839237672]
                 ],
-             
             }
             ],
     },
@@ -298,6 +295,7 @@ let groupLayers = [
             {
                 layerKey: 108,
                 label: "Маяк",
+                type: "Маяк",
                 iconUrl: LogoLightHouse,
                 icons: [{
                     type: 'Маяк (модель)',
@@ -328,10 +326,10 @@ let groupLayers = [
                 label: "Инструменты исследования окружающей среды",
                 iconUrl: LogoTools,
                 icons: [{
-                    type: 'Радарный датчик',
+                    type: 'Радарный датчик', name: 'Радарный датчик',
                     iconUrl: LogoTools
                 }, {
-                    type: "Автоматическая метеостанция (АМС)",
+                    type: "Автоматическая метеостанция (АМС)", name: "Автоматическая метеостанция (АМС)",
                     iconUrl: LogoMeteo
                 }
                 ],
@@ -344,7 +342,7 @@ let groupLayers = [
     //Special Objects
     {
         groupLabel: null,
-        isOnMap: false,
+        isOnMap: true,
         controlClassName: "icons-specialObg-item",
         layers: [
             {
@@ -431,7 +429,7 @@ let groupLayers = [
     //Birds
     {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "icons-birds-item",
         layers: [
             {
@@ -466,7 +464,7 @@ let groupLayers = [
     // //landscape
     {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "land-photo-item",
         layers: [
             {
@@ -477,7 +475,7 @@ let groupLayers = [
                     iconSize: [320, 320],
                     iconAnchor: [16, 27]
                 },
-              
+                
                 iconUrl: LogoPhoto,
                 iconSize: [33, 38],
                 feature: photo_views,
@@ -487,7 +485,7 @@ let groupLayers = [
     },
     {
         groupLabel: null,
-        isOnMap: true,
+        isOnMap: false,
         controlClassName: "land-road-item",
         layers: [
             {
@@ -514,7 +512,6 @@ let groupLayers = [
         controlClassName: "land-landscape-item",
         layers: [
             {
-                
                 layerKey: 115,
                 label: "Ландшафты",
                 iconUrl: LogoLandscape,
@@ -541,6 +538,6 @@ let groupLayers = [
             }
         ],
     }
-    
+
 ]
 export default groupLayers

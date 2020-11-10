@@ -43,7 +43,7 @@ export default class MapView extends React.Component {
             return item.layers.map((item, key) => {
                     if (item.featureType === "GeoJSON") {
                         return (
-                            <Pane  style={item.mapStyle}>
+                            <Pane style={item.mapStyle}>
                                 <GeoJSON key={item.layerKey} data={item.feature} style={item.style}
                                          onEachFeature={(feature, layer) => {
                                     
@@ -59,10 +59,9 @@ export default class MapView extends React.Component {
                                                  folderName = 'gif'
                                              }
                                     
-                                             let imagePop = `<img class="image-popup" alt="images path" src="./media/${folderName}/${feature.properties.image_src}" />`
                                              let namePop = `<h3>${feature.properties.name}</h3>`
+                                             let imagePop = `<img class="image-popup" alt="images path" src="./media/${folderName}/${feature.properties.image_src}" />`
                                              let note = `<p class="text-popup">${feature.properties.note}</p>`
-                                    
                                     
                                              if (feature.properties.image_src === null || feature.properties.image_src === undefined) {
                                                  imagePop = ""
@@ -85,7 +84,7 @@ export default class MapView extends React.Component {
                                     
                                              if (item.icons) {
                                                  item.icons.forEach((elem) => {
-                                                     if (elem.type === feature.properties.type) {
+                                                     if (elem.type === feature.properties.name) {
                                                          iconUrl = elem.iconUrl
                                                      }
                                                  })
