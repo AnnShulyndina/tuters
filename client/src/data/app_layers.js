@@ -27,6 +27,7 @@ import LogoDachs from "../icons/icons/dachs.png";
 import LogoFlower from "../icons/icons/flower.png";
 
 import LogoRoad from "../icons/land/Line.png";
+import LogoLandscape from "../icons/land/landscape.png"
 
 import LogoDepth from "../icons/depth/depths.svg"
 
@@ -259,7 +260,7 @@ let groupLayers = [
                     featureType: "GeoJSON",
                     controlClassName: "isobath",
                     mapStyle: {
-                        zIndex: 800
+                        zIndex: 500
                     }
                     
                     
@@ -476,7 +477,7 @@ let groupLayers = [
                     iconSize: [320, 320],
                     iconAnchor: [16, 27]
                 },
-                
+              
                 iconUrl: LogoPhoto,
                 iconSize: [33, 38],
                 feature: photo_views,
@@ -513,9 +514,10 @@ let groupLayers = [
         controlClassName: "land-landscape-item",
         layers: [
             {
+                
                 layerKey: 115,
                 label: "Ландшафты",
-                iconUrl: null,
+                iconUrl: LogoLandscape,
                 feature: zone,
                 featureType: "GeoJSON",
                 style: style_zone

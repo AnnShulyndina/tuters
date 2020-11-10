@@ -20,8 +20,6 @@ img.image-popup {
     size: A5;
 }
 
-
-
 p.text-popup {
 
     display: flex;
@@ -35,6 +33,8 @@ p.text-popup {
 .leaflet-popup-content-wrapper {
     max-width: 650px;
     max-height: 1000px;
+    position: relative;
+    z-index: 810;
 
 }
 
